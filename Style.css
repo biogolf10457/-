@@ -43,10 +43,14 @@ li a:hover {
     color: white;
 }
 
-.firstline{
+.title_text_firstline{
     font-size: 30px;
 }
-.secondline{
+.title_text_secondline{
     line-height: 0%;
     font-size: 40px;
+}
+
+.timeline{
+    background-image: url("");
 }
