@@ -5,23 +5,28 @@ body{
 ul{
     list-style-type: none;
     margin: 0;
-    padding-left: 70%;
     background: none;
 }
 
 li {
-    float: left;
+    float: right; /*ทำให้ชิดขวา แต่liจะกลับด้าน*/
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px;
+    padding: 20px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover {
     transition: 1s;
-    background-color: rgba(17, 17, 17, 0.300);
+    background-color: rgba(0, 0, 0, 0.300);
+}
+
+.title{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1000px;
 }
