@@ -32,7 +32,7 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.300);
 }
 
-.title{
+#title{
     background-image: url("img/test.jpg");
     width: 100%;
     height: 2000px;
@@ -40,16 +40,17 @@ li a:hover {
     background-size: cover;
 }
 
-.space{
-    height: 35vh;
-}
 
-.namtuamkrung_txt{
+#namtuamkrung_txt{
     font-size: 100px;
     text-align: center;
 }
 
-.title_text{
+#space{
+    height: 15%;
+}
+
+#title_text{
     clear:both;
     padding-left: 5%;
     color: white;
@@ -59,48 +60,39 @@ li a:hover {
     font-size: 30px;
 }
 .title_text_secondline{
-    line-height: 0%;
     font-size: 40px;
 }
 
-.timeline{
+.title_text_thirdlind{
+    font-size: 20px;
+}
+
+#timeline{
     height: 2000px;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.timeline_title_text{
+#timeline_title_text{
     clear:both;
     padding-left: 5%;
-    color: white;
+    color: black;
     margin-bottom: 100px;
 
 }
 
-.timeline_left{
+#timeline_left{
     background-color: skyblue;
-    width: 40%;
     height: 1900px;
-    left: 0%;
-    position: absolute;
-    display: inline-block;
 }
 
-.timeline_mid{
+#timeline_mid{
     background-color: black;
-    width: 20%;
     height: 1900px;
-    left: 40%;
-    position: absolute;
-    display: inline-block;
 }
 
-.timeline_right{
+#timeline_right{
     background-color: red;
-    width: 40%;
     height: 1900px;
-    left: 60%;
-    position: absolute;
-    display: inline-block;
 }
