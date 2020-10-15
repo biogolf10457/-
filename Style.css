@@ -33,12 +33,17 @@ li a:hover {
     background-size: cover;
 }
 
+.space{
+    height: 35vh;
+}
+
 .namtuamkrung_txt{
     font-size: 100px;
     text-align: center;
 }
 
 .title_text{
+    clear:both;
     padding-left: 5%;
     color: white;
 }
@@ -52,5 +57,43 @@ li a:hover {
 }
 
 .timeline{
+    height: 2000px;
     background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline_title_text{
+    clear:both;
+    padding-left: 5%;
+    color: white;
+    margin-bottom: 10%;
+
+}
+
+.timeline_left{
+    background-color: skyblue;
+    width: 40%;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    display: inline-block;
+}
+
+.timeline_mid{
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    left: 40%;
+    position: absolute;
+    display: inline-block;
+}
+
+.timeline_right{
+    background-color: red;
+    width: 40%;
+    height: 100%;
+    left: 60%;
+    position: absolute;
+    display: inline-block;
 }
