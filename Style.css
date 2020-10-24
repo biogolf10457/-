@@ -6,6 +6,7 @@ body{
 
 @font-face { font-family: Deepsea; src: url(Font/UID\ Deep\ sea.ttf); }
 @font-face { font-family: CSPraKas; src: url(Font/CS_PraKas/CSPraKas.otf); }
+@font-face { font-family: Athiti; src: url(Font/Athiti/Athiti-SemiBold.ttf); }
 
 nav{
     background-color: brown;
@@ -29,7 +30,7 @@ li a {
     padding-left: 50px;
     padding-right: 50px;
     text-decoration: none;
-    font-family: 'Athiti', sans-serif;
+    font-family: 'Athiti';
 }
 li a:hover {
     transition: 1s;
