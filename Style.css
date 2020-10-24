@@ -1,22 +1,26 @@
 body{
     background-color: lightblue;
+    color: #EDEDED;
+    overflow-x: hidden;
 }
 
-ul{
+@font-face { font-family: Deepsea; src: url(Font/UID\ Deep\ sea.ttf); }
+@font-face { font-family: CSPraKas; src: url(Font/CS_PraKas/CSPraKas.otf); }
+
+nav{
+    background-color: brown;
+}
+
+ul.horizontal{
     list-style-type: none;
+    position: relative;
     margin: 0;
-    background: none;
-    overflow: inherit;
-    position: fixed;
-    top: 0px;
-    padding-left: 50%;
+    padding: 0;
     z-index: 1;
 }
-
-li {
-    float: left;
+ul.horizontal li{
+    float: right;
 }
-
 li a {
     display: block;
     color: white;
@@ -25,74 +29,80 @@ li a {
     padding-left: 50px;
     padding-right: 50px;
     text-decoration: none;
+    font-family: 'Athiti', sans-serif;
 }
-
 li a:hover {
     transition: 1s;
     background-color: rgba(0, 0, 0, 0.300);
 }
 
-#title{
-    background-image: url("Artwork/Artwork-1.png");
+.scene{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+#timeline{
+    background-color: black;
+}
+.subscene{
+    height: 100vh;
+}
+#head1{
+    position: relative;
     width: 100%;
-    height: 2000px;
+    height: 300vh;
+    background-image: url(/Artwork/Artwork-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-#namtuamkrung_txt{
-    font-size: 100px;
+#head1BottomImg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.sub-title{
+    font-family: Deepsea;
+    margin-left: 7%;
+    padding-top: 200px;
+}
+#tlt1{
+    font-size: 2em;
+    margin: 0;
+    color: #EDEDED;
+}
+#tlt2{
+    font-size: 3em;
+    margin: 0;
+    color: #EDEDED;
+}
+#tlt3{
+    font-size: 6.2em;
+    margin: 0;
+    color: #F04342;
+}
+.sub-timeline{
+    margin: 0;
+    padding: 0;
+    margin-top: 75px;
     text-align: center;
 }
-
-#space{
-    height: 15%;
+.defTL{
+    width: 47.5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: CSPraKas;
+    color: #EDEDED;
+    margin-bottom: 200px;
+}
+.midTL{
+    width: 5%;
+}
+.lineTL{
+    height: 100%;
+    width: 10%;
+    margin-left: 45%;
+    background-color: #EDEDED;
 }
 
-#title_text{
-    clear:both;
-    padding-left: 5%;
-    color: white;
-}
 
-.title_text_firstline{
-    font-size: 30px;
-}
-.title_text_secondline{
-    font-size: 40px;
-}
 
-.title_text_thirdlind{
-    font-size: 20px;
-}
-
-#timeline{
-    height: 2000px;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#timeline_title_text{
-    clear:both;
-    padding-left: 5%;
-    color: black;
-    margin-bottom: 100px;
-
-}
-
-#timeline_left{
-    background-color: skyblue;
-    height: 1900px;
-}
-
-#timeline_mid{
-    background-color: black;
-    height: 1900px;
-}
-
-#timeline_right{
-    background-color: red;
-    height: 1900px;
-}
