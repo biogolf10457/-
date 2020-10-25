@@ -100,5 +100,18 @@ li a:hover {
     background-color: #EDEDED;
 }
 
+#redmap{
+    margin-left: 7%;
+    position: relative;
+}
+#redmap img{
+    width: 93%;
+}
+#hidmap{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 
