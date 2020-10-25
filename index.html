@@ -186,6 +186,36 @@
         </footer>
     </div>
     <script type="text/javascript">
+        var imgScr = ["/Artwork/Logo_.png",
+        "/Artwork/Page02_Artwork.png",
+        "/Artwork/Page03_Artwork.png",
+        "/Artwork/KRUNGTAINAM-01.png",
+        "/Artwork/KRUNGTAINAM-02.png",
+        "/Artwork/KRUNGTAINAM-03.png",
+        "/Artwork/Page04_Artwork.png",
+        "/Artwork/Page05_Artwork.png",
+        "/Artwork/Page06_Artwork.png",
+        "/Artwork/Artwork-7.png",
+        "/Artwork/ย้อนรอยวันวานสถานการณ์น้ำท่วมกรุง.png",
+        "/Artwork/2485.png",
+        "/Artwork/2526.png",
+        "/Artwork/2538.png",
+        "/Artwork/2554.png",
+        "/Artwork/Artwork-38.png",
+        "/Artwork/Artwork-34.png",
+        "/Artwork/Artwork-36.png",
+        "/Artwork/Untitled_Artwork 17 copy.png",
+        "/Artwork/Page01_Artwork.png",
+        "/Artwork/คาดการณ์พื้นที่เสี่ยง.png",
+        "/Artwork/Map01_Artwork.png",
+        "/Artwork/Map02_Artwork.png",
+        "/Artwork/Chinese-1.png",
+        "/Artwork/Thailand-1.png",
+        "Artwork/Bangladesh-1.png",
+        "/Artwork/India-1.png",
+        "/Artwork/Indonesia-1.png",
+        "/Artwork/Vietnam-1.png"];
+        var imgCch = [];
         var w = window.innerWidth;
         var h = window.innerHeight;
         console.log(w);
@@ -195,11 +225,11 @@
             highlightCircle("c2");
             highlightCircle("c3");
             highlightCircle("c4");
-            showByClass("defTL");
-            showByClass("sub-title");
+            showByClasswTr("defTL");
+            showByClasswTr("sub-title");
             showById("intro");
-            showById("redmap");
-            showById("effCountry");
+            showByIdwTr("redmap");
+            showByIdwTr("effCountry");
         });
         function highlightCircle(cid) {
             var c = document.getElementById(cid);
@@ -223,6 +253,21 @@
                 }
             }
         }
+        function showByClasswTr(eclass) {
+            var elms = document.getElementsByClassName(eclass);
+            for (let i = 0; i < elms.length; i++) {
+                if (elms[i].getBoundingClientRect().top > h/3 && elms[i].getBoundingClientRect().top < 2*h/3) {
+                    elms[i].style.opacity = "100%";
+                    elms[i].style.transform = "translate(0,0)";
+                }
+            }
+            if (elms[0].getBoundingClientRect().top > 2*h/3) {
+                for (let i = 0; i < elms.length; i++) {
+                    elms[i].style.opacity = "0%";
+                    elms[i].style.transform = "translate(0,5%)";
+                }
+            }
+        }
         function showById(eid){
             var elm = document.getElementById(eid);
             var elmBCR = elm.getBoundingClientRect();
@@ -230,6 +275,24 @@
                 elm.style.opacity = "100%";
             }else if(elmBCR.top > 2*h/3){
                 elm.style.opacity = "0%";
+            }
+        }
+        function showByIdwTr(eid){
+            var elm = document.getElementById(eid);
+            var elmBCR = elm.getBoundingClientRect();
+            if (elmBCR.top > h/3 && elmBCR.top < 2*h/3) {
+                elm.style.opacity = "100%";
+                elm.style.transform = "translate(0,0)";
+            }else if(elmBCR.top > 2*h/3){
+                elm.style.opacity = "0%";
+                elm.style.transform = "translate(0,5%)";
+            }
+        }
+        function preLoadImg(src){
+            for (let i = 0; i < src.length; i++) {
+                var my_image = new Image();
+                my_image.src = src[i];
+                imgCch.push(my_image);
             }
         }
     </script>
