@@ -181,6 +181,8 @@ li a:hover {
     color: #EDEDED;
     margin-bottom: 200px;
     position: relative;
+    opacity: 0;
+    transition: 1.8s;
 }
 .midTL{
     width: 5%;
@@ -230,4 +232,8 @@ li a:hover {
     padding: 0;
     text-align: center;
     font-family: CSPraKas;
+}
+
+.row{
+
 }

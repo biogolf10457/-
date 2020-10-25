@@ -195,6 +195,7 @@
             highlightCircle("c2");
             highlightCircle("c3");
             highlightCircle("c4");
+            showDefTL();
         });
         function highlightCircle(cid) {
             var c = document.getElementById(cid);
@@ -203,6 +204,19 @@
                 c.style.filter = "brightness(150%)";
             }else{
                 c.style.filter = "brightness(50%)";
+            }
+        }
+        function showDefTL() {
+            var elms = document.getElementsByClassName("defTL");
+            for (let i = 0; i < elms.length; i++) {
+                if (elms[i].getBoundingClientRect().top > h/4 && elms[i].getBoundingClientRect().top < 3*h/4) {
+                    elms[i].style.opacity = "100%";
+                }
+            }
+            if (elms[0].getBoundingClientRect().top > 3*h/4) {
+                for (let i = 0; i < elms.length; i++) {
+                    elms[i].style.opacity = "0%";
+                }
             }
         }
     </script>
