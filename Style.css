@@ -7,9 +7,32 @@ body{
 @font-face { font-family: Deepsea; src: url(Font/UID\ Deep\ sea.ttf); }
 @font-face { font-family: CSPraKas; src: url(Font/CS_PraKas/CSPraKas.otf); }
 @font-face { font-family: Athiti; src: url(Font/Athiti/Athiti-SemiBold.ttf); }
+@font-face { font-family: AthitiM; src: url(Font/Athiti/Athiti-Medium.ttf); }
 
 nav{
     background-color: brown;
+}
+
+footer{
+    margin: 0;
+    padding: 4% 0% 2% 0%;
+}
+.footHalf{
+    width: 49%; 
+    padding-left: 7%;
+    display: inline-block;
+}
+#footTitle{
+    font-family: Athiti;
+    color: #EDEDED;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-left: 4%;
+}
+.footHalf p{
+    font-family: AthitiM;
+    color: #EDEDED;
+    font-size: 1em;
 }
 
 ul.horizontal{
@@ -35,6 +58,17 @@ li a {
 li a:hover {
     transition: 1s;
     background-color: rgba(0, 0, 0, 0.300);
+}
+
+.nextPageButton{
+    font-family: Athiti;
+    color: #EDEDED;
+    background-color: rgb(104, 104, 104);
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.25em;
+    border-radius: 20px;
 }
 
 .scene{
