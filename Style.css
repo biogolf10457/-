@@ -44,8 +44,11 @@ li a:hover {
 }
 #timeline{
     background-color: black;
+    margin-bottom: 100px;
 }
 .subscene{
+    margin: 0;
+    padding: 0;
     height: 100vh;
 }
 #head1{
@@ -55,6 +58,7 @@ li a:hover {
     background-image: url(/Artwork/Artwork-1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 200px;
 }
 #head1BottomImg{
     position: absolute;
@@ -64,22 +68,13 @@ li a:hover {
 .sub-title{
     font-family: Deepsea;
     margin-left: 7%;
-    padding-top: 200px;
 }
-#tlt1{
-    font-size: 2em;
-    margin: 0;
+#st1{
+    font-size: 1.15em;
     color: #EDEDED;
-}
-#tlt2{
-    font-size: 3em;
-    margin: 0;
-    color: #EDEDED;
-}
-#tlt3{
-    font-size: 6.2em;
-    margin: 0;
-    color: #F04342;
+    margin-left: 2%;
+    width: 39%;
+    font-family: CSPraKas;
 }
 .sub-timeline{
     margin: 0;
