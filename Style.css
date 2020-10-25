@@ -146,6 +146,7 @@ li a:hover {
     font-family: CSPraKas;
     color: #EDEDED;
     margin-bottom: 200px;
+    position: relative;
 }
 .midTL{
     width: 5%;
