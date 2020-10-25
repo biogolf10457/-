@@ -97,6 +97,40 @@ li a:hover {
     position: absolute;
     transform: translate(-50%, -50%);
 }
+#sign1{
+    animation-name: sign1Animation;
+    animation-duration: 8.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes sign1Animation {
+    0%   {transform: translate(-50%, -50%);}
+    50%  {transform: translate(-50%, -40%);}
+    100% {transform: translate(-50%, -50%);}
+}
+#car1{
+    animation-name: car1Animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes car1Animation {
+    0%   {transform: translate(-50%, -50%);}
+    50%  {transform: translate(-50%, -55%);}
+    100% {transform: translate(-50%, -50%);}
+}
+#car2{
+    animation-name: car2Animation;
+    animation-duration: 9.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes car2Animation {
+    0%   {transform: translate(-50%, -50%);}
+    50%  {transform: translate(-50%, -45%);}
+    100% {transform: translate(-50%, -50%);}
+}
+
 
 #timeline{
     background-color: black;
@@ -157,6 +191,7 @@ li a:hover {
     width: 10%;
     margin-left: 45%;
     background-color: #EDEDED;
+    filter: brightness(50%);
 }
 .circle{
     width: 40px;
@@ -167,6 +202,8 @@ li a:hover {
     top: 0;
     left: 50%;
     transform: translate(-50%,0);
+    filter: brightness(50%);
+    transition: 1s;
 }
 
 #redmap{
