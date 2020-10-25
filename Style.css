@@ -18,7 +18,7 @@ footer{
     padding: 4% 0% 2% 0%;
 }
 .footHalf{
-    width: 49%; 
+    width: 49%;
     padding-left: 7%;
     display: inline-block;
 }
@@ -44,7 +44,7 @@ ul.horizontal{
 }
 ul.horizontal li{
     float: right;
-    width: 7%; 
+    width: 7%;
     margin: 2%;
 }
 li a {
@@ -111,7 +111,7 @@ li a:hover {
 #head1{
     position: relative;
     width: 100%;
-    background-image: url(/Artwork/Artwork-1.png);
+    background-image: url(/Artwork/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 200px;
