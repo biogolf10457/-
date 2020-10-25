@@ -73,6 +73,7 @@ li a:hover {
     font-size: 1.15em;
     color: #EDEDED;
     margin-left: 2%;
+    margin-bottom: 2%;
     width: 39%;
     font-family: CSPraKas;
 }
@@ -111,6 +112,19 @@ li a:hover {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#effCountry{
+    padding-top: 2.5%;
+    color: #EDEDED;
+}
+.sub-effCountry{
+    width: 32%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: CSPraKas;
 }
 
 
