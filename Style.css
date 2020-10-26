@@ -105,7 +105,7 @@ li a:hover {
 }
 #sign1{
     animation-name: sign1Animation;
-    animation-duration: 8.5s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -116,7 +116,7 @@ li a:hover {
 }
 #car1{
     animation-name: car1Animation;
-    animation-duration: 10s;
+    animation-duration: 6.4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -127,7 +127,7 @@ li a:hover {
 }
 #car2{
     animation-name: car2Animation;
-    animation-duration: 9.4s;
+    animation-duration: 6.8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -154,7 +154,6 @@ li a:hover {
     transform-origin: 50% 0% 0;
     filter: blur(50px) opacity(.5);
     z-index: 2;
-    transition: 0s;
 }
 .subscene{
     margin: 0;
