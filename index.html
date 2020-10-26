@@ -19,7 +19,7 @@
     </nav>
 
     <div class="scene" id="head1">
-        <div class="subscene" style="height: 720px;">
+        <div class="subscene">
             <div class="subscene" style="position: absolute;width: 100%;overflow: hidden;">
                 <img class="imgEleH" id="bg1" src="/Artwork/Page02_Artwork.png" alt="" width="100%">
                 <img class="imgEleH" id="bg2" src="/Artwork/Page03_Artwork.png" alt="" width="100%">
@@ -222,7 +222,6 @@
         var h = window.innerHeight;
         console.log(w);
         console.log(h);
-        var headHeight = 0.47*h;
         var head1 = document.getElementById("head1");
         window.addEventListener("mousemove", (event1) => {
             var x = event1.screenX;
@@ -312,7 +311,7 @@
                 imgCch.push(my_image);
             }
         }
-        function scrollBG(eid, scale){
+        function scrollBG(eid, scale, start){
             var start = -10;
             var add = head1.getBoundingClientRect().top/scale;
             document.getElementById(eid).style.bottom = start+add + "%";
