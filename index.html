@@ -48,7 +48,6 @@
         </div>
     </div>
     <div class="scene" id="timeline">
-        
         <div class="sub-title">
             <img src="/Artwork/ย้อนรอยวันวานสถานการณ์น้ำท่วมกรุง.png" alt="" width="45%">
         </div>
@@ -227,9 +226,11 @@
             var x = event1.screenX;
             var y = event1.screenY;
             var degree = -1 * Math.atan((x-(w/2))/y)  * 180 / Math.PI;
-            if (document.getElementById("redlight").getBoundingClientRect().top < h) {
+            if (document.getElementById("redlight").getBoundingClientRect().top < h && document.getElementById("redlight").getBoundingClientRect().bottom > 0) {
                 document.getElementById("redlight").style.transform = "translate(-50%,0) rotate("+degree/2+"deg)";
-            }   
+            }else{
+                document.getElementById("redlight").style.transform = "translate(-50%,0) rotate(0deg)";
+            }
         });
         window.addEventListener("scroll", (event2) => {
             highlightCircle("c1");
