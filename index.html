@@ -48,11 +48,12 @@
         </div>
     </div>
     <div class="scene" id="timeline">
-        <div id="redlight"></div>
+        
         <div class="sub-title">
             <img src="/Artwork/ย้อนรอยวันวานสถานการณ์น้ำท่วมกรุง.png" alt="" width="45%">
         </div>
         <div class="sub-timeline">
+            <div id="redlight"></div>
             <div class="row">
                 <div class="defTL">
                     <img src="/Artwork/2485.png" alt="" width="40%">
@@ -223,7 +224,15 @@
         console.log(h);
         var headHeight = 0.47*h;
         var head1 = document.getElementById("head1");
-        window.addEventListener("scroll", (event) => {
+        window.addEventListener("mousemove", (event1) => {
+            var x = event1.screenX;
+            var y = event1.screenY;
+            var degree = -1 * Math.atan((x-(w/2))/y)  * 180 / Math.PI;
+            if (document.getElementById("redlight").getBoundingClientRect().top < h) {
+                document.getElementById("redlight").style.transform = "translate(-50%,0) rotate("+degree/2+"deg)";
+            }   
+        });
+        window.addEventListener("scroll", (event2) => {
             highlightCircle("c1");
             highlightCircle("c2");
             highlightCircle("c3");
