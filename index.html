@@ -19,11 +19,11 @@
     </nav>
 
     <div class="scene" id="head1">
-        <div class="subscene">
+        <div class="subscene" style="height: 720px;">
             <div class="subscene" style="position: absolute;width: 100%;overflow: hidden;">
-                <img class="imgEleH" src="/Artwork/Page02_Artwork.png" alt="" width="100%">
-                <img class="imgEleH" src="/Artwork/Page03_Artwork.png" alt="" width="100%">
-                <img class="imgEleH" src="/Artwork/KRUNGTAINAM-01.png" alt="" width="100%">
+                <img class="imgEleH" id="bg1" src="/Artwork/Page02_Artwork.png" alt="" width="100%">
+                <img class="imgEleH" id="bg2" src="/Artwork/Page03_Artwork.png" alt="" width="100%">
+                <img class="imgEleH" id="bg3" src="/Artwork/KRUNGTAINAM-01.png" alt="" width="100%">
             </div>
             <img class="imgEleH" src="/Artwork/KRUNGTAINAM-02.png" alt="" width="100%" style="transform: translate(-50%,38%);">
             <img class="imgEleH" src="/Artwork/KRUNGTAINAM-03.png" alt="" width="100%" style="transform: translate(-50%,49%);">
@@ -58,7 +58,7 @@
                     <p>เกิดอุทกภัยน้ำท่วมเริ่มต้นตั้งแต่ปลายเดือนกันยายนไปจนถึง
                         30 พฤศจิกายน 2485 น้ำท่วมหนักมากกว่าปี พ.ศ. 2460
                         เกือบเท่าตัว เนื่องจากฝนตกหนักทำให้ระดับน้ำใน
-                        แม่น้ำเจ้าพระยาสูงจนล้นทะลัก วัดระดับน้ำได้ 2.27 เมตร
+                        <span class="red">แม่น้ำเจ้าพระยาสูงจนล้นทะลัก</span> วัดระดับน้ำได้ 2.27 เมตร
                         เหนือระดับน้ำทะเลปานกลาง
                     </p>
                 </div>
@@ -82,8 +82,8 @@
                     <img src="/Artwork/2526.png" alt="" width="40%">
                     <p>ครั้งนี้ก็เกิดอุทกภัยน้ำท่วมรุนแรงมาก เนื่องจากช่วงเดือนกันยายน-ตุลาคม
                         โดนอิทธิพลจากพายุทางภาคเหนือและภาคกลาง ในช่วงเดือนตุลาคม
-                        ยังโดนพายุพัดผ่านอีกหลายลูกจนทำให้เกิดน้ำท่วม กรุงเทพมหานคร
-                        ตกอยู่ในสภาวะน้ำท่วมสูงกว่า 1 เมตรติดต่อกันนานหลายเดือน
+                        ยังโดนพายุพัดผ่านอีกหลายลูกจนทำให้เกิดน้ำท่วม กรุงเทพมหานคร 
+                        <span class="red">ตกอยู่ในสภาวะน้ำท่วมสูงกว่า 1 เมตร</span>ติดต่อกันนานหลายเดือน
                         วัดปริมาณน้ำฝนตลอดทั้งปีได้ 2119 มม.
                     </p>
                 </div>
@@ -93,7 +93,7 @@
                     <img src="/Artwork/2538.png" alt="" width="40%">
                     <p>เป็นอีกปีที่เกิดน้ำท่วมหนักเช่นกัน เนื่องจากได้รับอิทธิพลจากพายุ "โอลิส"
                         ทำให้ระดับน้ำในแม่น้ำเจ้าพระยาสูงขึ้น โดยวัดระดับน้ำได้สูงถึง 2.27 เมตร
-                        ระดับน้ำทะเลปานกลาง ซึ่งสูงสุดเป็นประวัติการณ์ พอ ๆ กับปี พ.ศ. 2485
+                        ระดับน้ำทะเลปานกลาง <span class="red">ซึ่งสูงสุดเป็นประวัติการณ์</span> พอ ๆ กับปี พ.ศ. 2485
                         ทำให้แม่น้ำเจ้าพระยาล้นทะลัก ท่วมทั่วกรุงสูงถึง 50-100 ซม.
                     </p>
                 </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="defTL" style="margin-bottom: 100px;">
                     <img src="/Artwork/2554.png" alt="" width="40%">
-                    <p>ปีนี้ถือว่าหนักที่สุดเลยก็ว่าได้ เรียกว่าเป็น "มหาอุทกภัยขั้นรุนแรง"
+                    <p>ปีนี้ถือว่าหนักที่สุดเลยก็ว่าได้ เรียกว่าเป็น <span class="red">"มหาอุทกภัยขั้นรุนแรง"</span> 
                         เนื่องจากได้รับอิทธิพลจากพายุหมุนนกเตนขึ้นฝั่งทางตอนเหนือของเวียดนาม
                         ส่งผลให้เกิดฝนตกหนักทางภาคเหนือและภาคตะวันออกเฉียงเหนือ
                         ของประเทศไทย เกิดน้ำท่วมฉับพลันอย่างต่อเนื่อง
@@ -220,6 +220,8 @@
         var h = window.innerHeight;
         console.log(w);
         console.log(h);
+        var headHeight = 0.47*h;
+        var head1 = document.getElementById("head1");
         window.addEventListener("scroll", (event) => {
             highlightCircle("c1");
             highlightCircle("c2");
@@ -230,6 +232,9 @@
             showById("intro");
             showByIdwTr("redmap");
             showByIdwTr("effCountry");
+            scrollBG("bg1",16);
+            scrollBG("bg2",24);
+            scrollBG("bg3",32);
         });
         function highlightCircle(cid) {
             var c = document.getElementById(cid);
@@ -294,6 +299,11 @@
                 my_image.src = src[i];
                 imgCch.push(my_image);
             }
+        }
+        function scrollBG(eid, scale){
+            var start = -10;
+            var add = head1.getBoundingClientRect().top/scale;
+            document.getElementById(eid).style.bottom = start+add + "%";
         }
     </script>
 </body>

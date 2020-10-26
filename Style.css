@@ -12,6 +12,9 @@ body{
 nav{
     background-color: brown;
 }
+.red{
+    color: #F04342;
+}
 
 footer{
     margin: 0;
@@ -94,6 +97,7 @@ li a:hover {
     bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0);
+    transition: .1s;
 }
 .imgEle{
     position: absolute;
