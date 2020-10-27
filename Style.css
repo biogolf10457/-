@@ -79,6 +79,17 @@ li a:hover {
     height: auto;
 }
 
+#sub-def-head1{
+    color: #EDEDED;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-360%);
+    bottom: -10%;
+    left: 50%;
+    font-family: Deepsea;
+}
+
 #intro{
     width: 35%;
     position: absolute;
@@ -268,8 +279,4 @@ li a:hover {
     padding: 0;
     text-align: center;
     font-family: CSPraKas;
-}
-
-.row{
-
 }
