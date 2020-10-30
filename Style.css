@@ -1,282 +1,343 @@
-body{
-    background-color: lightblue;
-    color: #EDEDED;
-    overflow-x: hidden;
+body {
+  background-color: lightblue;
+  color: #ededed;
+  overflow-x: hidden;
 }
 
-@font-face { font-family: Deepsea; src: url(Font/UID\ Deep\ sea.ttf); }
-@font-face { font-family: CSPraKas; src: url(Font/CS_PraKas/CSPraKas.otf); }
-@font-face { font-family: Athiti; src: url(Font/Athiti/Athiti-SemiBold.ttf); }
-@font-face { font-family: AthitiM; src: url(Font/Athiti/Athiti-Medium.ttf); }
-
-nav{
-    background-color: brown;
+@font-face {
+  font-family: Deepsea;
+  src: url(Font/UID\ Deep\ sea.ttf);
 }
-.red{
-    color: #F04342;
+@font-face {
+  font-family: CSPraKas;
+  src: url(Font/CS_PraKas/CSPraKas.otf);
 }
-
-footer{
-    margin: 0;
-    padding: 4% 0% 2% 0%;
+@font-face {
+  font-family: Athiti;
+  src: url(Font/Athiti/Athiti-SemiBold.ttf);
 }
-.footHalf{
-    width: 49%;
-    padding-left: 7%;
-    display: inline-block;
-}
-#footTitle{
-    font-family: Athiti;
-    color: #EDEDED;
-    font-size: 1.5em;
-    display: inline-block;
-    margin-left: 4%;
-}
-.footHalf p{
-    font-family: AthitiM;
-    color: #EDEDED;
-    font-size: 1em;
+@font-face {
+  font-family: AthitiM;
+  src: url(Font/Athiti/Athiti-Medium.ttf);
 }
 
-ul.horizontal{
-    list-style-type: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
+nav {
+  background-color: brown;
 }
-ul.horizontal li{
-    float: right;
-    width: 7%;
-    margin: 2%;
+.red {
+  color: #f04342;
+}
+
+footer {
+  margin: 0;
+  padding: 4% 0% 2% 0%;
+}
+.footHalf {
+  width: 49%;
+  padding-left: 7%;
+  display: inline-block;
+}
+#footTitle {
+  font-family: Athiti;
+  color: #ededed;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-left: 4%;
+}
+.footHalf p {
+  font-family: AthitiM;
+  color: #ededed;
+  font-size: 1em;
+}
+
+ul.horizontal {
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+ul.horizontal li {
+  float: right;
+  width: 7%;
+  margin: 2%;
 }
 li a {
-    margin: 0;
-    display: block;
-    text-align: center;
-    font-family: 'Athiti';
-    color: white;
-    text-decoration: none;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-family: "Athiti";
+  color: white;
+  text-decoration: none;
 }
 li a:hover {
-    transition: 1s;
+  transition: 1s;
 }
 
-.nextPageButton{
-    font-family: Athiti;
-    color: #EDEDED;
-    background-color: rgb(104, 104, 104);
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 1.25em;
-    border-radius: 20px;
+.nextPageButton {
+  font-family: Athiti;
+  color: #ededed;
+  background-color: rgb(104, 104, 104);
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.25em;
+  border-radius: 20px;
 }
 
-.scene{
-    margin: 0;
-    padding: 0;
-    height: auto;
+.scene {
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
-#sub-def-head1{
-    color: #EDEDED;
-    font-size: 2em;
-    text-align: center;
-    position: absolute;
-    transform: translate(-50%,-360%);
-    bottom: -10%;
-    left: 50%;
-    font-family: Deepsea;
+#sub-def-head1 {
+  color: #ededed;
+  font-size: 2em;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -360%);
+  bottom: -10%;
+  left: 50%;
+  font-family: Deepsea;
 }
 
-#intro{
-    width: 35%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: #EDEDED;
-    font-family: CSPraKas;
-    font-size: 1.15em;
-    transition: 3s;
-    opacity: 0%;
+#intro {
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ededed;
+  font-family: CSPraKas;
+  font-size: 1.15em;
+  transition: 3s;
+  opacity: 0%;
 }
-.imgEleH{
-    position: absolute;
-    bottom: -10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    transition: .1s;
+.imgEleH {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.1s;
 }
-.imgEle{
-    position: absolute;
-    transform: translate(-50%, -50%);
+.imgEle {
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
-#sign1{
-    animation-name: sign1Animation;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+#sign1 {
+  animation-name: sign1Animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes sign1Animation {
-    0%   {transform: translate(-50%, -50%);}
-    50%  {transform: translate(-50%, -40%);}
-    100% {transform: translate(-50%, -50%);}
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
-#car1{
-    animation-name: car1Animation;
-    animation-duration: 6.4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+#car1 {
+  animation-name: car1Animation;
+  animation-duration: 6.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes car1Animation {
-    0%   {transform: translate(-50%, -50%);}
-    50%  {transform: translate(-50%, -55%);}
-    100% {transform: translate(-50%, -50%);}
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -55%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
-#car2{
-    animation-name: car2Animation;
-    animation-duration: 6.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+#car2 {
+  animation-name: car2Animation;
+  animation-duration: 6.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes car2Animation {
-    0%   {transform: translate(-50%, -50%);}
-    50%  {transform: translate(-50%, -45%);}
-    100% {transform: translate(-50%, -50%);}
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -45%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
 
+#timeline {
+  background-color: black;
+  margin-bottom: 100px;
+  position: relative;
+}
+#redlight {
+  width: 10%;
+  height: 100%;
+  background-color: #f04342;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transform-origin: 50% 0% 0;
+  filter: blur(50px) opacity(0.5);
+  z-index: 2;
+}
+.subscene {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}
+#head1 {
+  position: relative;
+  width: 100%;
+  background-image: url(/Artwork/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+}
+#head1BottomImg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.sub-title {
+  font-family: Deepsea;
+  margin-left: 7%;
+  transition: 2.5s;
+  opacity: 0%;
+}
+#st1 {
+  font-size: 1.15em;
+  color: #ededed;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  width: 39%;
+  font-family: CSPraKas;
+}
+.sub-timeline {
+  margin: 0;
+  padding: 0;
+  margin-top: 75px;
+  text-align: center;
+}
+.defTL {
+  width: 47.5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-family: CSPraKas;
+  color: #ededed;
+  margin-bottom: 200px;
+  position: relative;
+  opacity: 0;
+  transition: 2.5s;
+}
+.midTL {
+  width: 5%;
+  position: relative;
+}
+.lineTL {
+  height: 100%;
+  width: 10%;
+  margin-left: 45%;
+  background-color: #ededed;
+  filter: brightness(50%);
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ededed;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  filter: brightness(50%);
+  transition: 1s;
+  z-index: 3;
+}
 
-#timeline{
-    background-color: black;
-    margin-bottom: 100px;
-    position: relative;
+#redmap {
+  /* margin-left: 7%; */
+  position: relative;
+  transition: 2.5s;
+  opacity: 0%;
 }
-#redlight{
-    width: 10%;
-    height: 100%;
-    background-color: #F04342;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%,0);
-    transform-origin: 50% 0% 0;
-    filter: blur(50px) opacity(.5);
-    z-index: 2;
+#redmap img {
+  width: 95%;
 }
-.subscene{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    position: relative;
-}
-#head1{
-    position: relative;
-    width: 100%;
-    background-image: url(/Artwork/Background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 200px;
-}
-#head1BottomImg{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.sub-title{
-    font-family: Deepsea;
-    margin-left: 7%;
-    transition: 2.5s;
-    opacity: 0%;
-}
-#st1{
-    font-size: 1.15em;
-    color: #EDEDED;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    width: 39%;
-    font-family: CSPraKas;
-}
-.sub-timeline{
-    margin: 0;
-    padding: 0;
-    margin-top: 75px;
-    text-align: center;
-}
-.defTL{
-    width: 47.5%;
-    padding-right: 10%;
-    padding-left: 10%;
-    font-family: CSPraKas;
-    color: #EDEDED;
-    margin-bottom: 200px;
-    position: relative;
-    opacity: 0;
-    transition: 2.5s;
-}
-.midTL{
-    width: 5%;
-    position: relative;
-}
-.lineTL{
-    height: 100%;
-    width: 10%;
-    margin-left: 45%;
-    background-color: #EDEDED;
-    filter: brightness(50%);
-}
-.circle{
-    width: 40px;
-    height: 40px;
-    background-color: #EDEDED;
-    border-radius: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,0);
-    filter: brightness(50%);
-    transition: 1s;
-    z-index: 3;
-}
-
-#redmap{
-    margin-left: 7%;
-    position: relative;
-    transition: 2.5s;
-    opacity: 0%;
-}
-#redmap img{
-    width: 93%;
-}
-#hidmap{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0%;
-    animation-name: hidmapAnimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+#hidmap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0%;
+  animation-name: hidmapAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes hidmapAnimation {
-    0%   {opacity: 0%;}
-    50%  {opacity: 100%;}
-    100% {opacity: 0%;}
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 
-#effCountry{
-    padding-top: 2.5%;
-    color: #EDEDED;
-    transition: 2.5s;
-    opacity: 0%;
+.row_flexContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
 }
-.sub-effCountry{
-    width: 32%;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: CSPraKas;
+
+#effCountry {
+  padding-top: 2.5%;
+  color: #ededed;
+  transition: 2.5s;
+  opacity: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.effCountry_container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.sub-effCountry {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: CSPraKas;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.effCountry_flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
