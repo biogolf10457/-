@@ -285,7 +285,7 @@ li a:hover {
   left: 0;
   opacity: 0%;
   animation-name: hidmapAnimation;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
