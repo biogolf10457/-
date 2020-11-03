@@ -341,25 +341,3 @@ li a:hover {
   flex-direction: column;
   align-items: center;
 }
-
-#head2{
-  position: relative;
-  width: 100%;
-  background-image: url(/img/test.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 0px;
-}
-
-#cause{
-  background-color: black;
-  margin-bottom: 100px;
-  position: relative;
-}
-
-.monitor{
-  margin: 0;
-  padding: 0;
-  height: 80%;
-  position: relative;
-}

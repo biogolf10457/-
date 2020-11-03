@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="CauseStyle.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,7 +30,7 @@
       </ul>
     </nav>
 
-    <div class="scene" id="head2">
+    <div class="scene" id="head1">
       <div class="subscene">
         <div class="subscene" style="position: absolute; width: 100%; overflow: hidden">
           <img
@@ -59,12 +60,8 @@
     </div>
     <div class="scene" id="cause">
       <div class="monitor">
-        <button>
-
-        </button>
-        <button>
-          
-        </button>
+        <div id="left" @click="goLeft"></div>
+        <div id="right" @click="goRight"></div>
 
       </div>
     </div>
