@@ -1,14 +1,13 @@
 #head1{
   position: relative;
   width: 100%;
-  background-image: url(/img/test.jpg);
+  background-image: url(/Artwork/Cause/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0px;
 }
   
 #cause{
-  background-color: black;
   padding: 0;
   position: relative;
   background-image: url();
