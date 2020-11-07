@@ -205,7 +205,7 @@ li a:hover {
 #head1 {
   position: relative;
   width: 100%;
-  background-image: url(/Artwork/Background.png);
+  background-image: url(/Artwork/Home/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 200px;
