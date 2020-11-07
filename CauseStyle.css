@@ -1,7 +1,14 @@
+body {
+  background-image: url(/Artwork/Cause/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ededed;
+  overflow-x: hidden;
+}
+
 #head1{
   position: relative;
   width: 100%;
-  background-image: url(/Artwork/Cause/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0px;
@@ -10,12 +17,7 @@
 #cause{
   padding: 0;
   position: relative;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
   width: 100%;
-  display: flex;
 }
 
 .left{
