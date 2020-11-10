@@ -15,6 +15,15 @@ body {
   src: url(Font/CS_PraKas/CSPraKas.otf);
 }
 
+@font-face {
+  font-family: Athiti;
+  src: url(Font/Athiti/Athiti-SemiBold.ttf);
+}
+@font-face {
+  font-family: AthitiM;
+  src: url(Font/Athiti/Athiti-Medium.ttf);
+}
+
 #head1{
   position: relative;
   width: 100%;
@@ -22,20 +31,19 @@ body {
   
 #cause{
   position: relative;
+  z-index: 2;
   width: 100%;
-  text-align: center;
 }
 
 .left{
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 15vh;
   height: 15vh;
   background-image: url(img/test.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(80%);
-  transform: rotate(90deg);
+  filter: brightness(70%);
 }
 .left:hover{
   filter: brightness(110%);
@@ -43,43 +51,41 @@ body {
 }
   
 .right{
-  position: relative;
+  position: absolute;
   display: inline-block;
+  right: 0;
   width: 15vh;
   height: 15vh;
   background-image: url(img/test.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(80%);
-  transform: rotate(-90deg);
+  filter: brightness(70%);
 }
 .right:hover{
   filter: brightness(110%);
   cursor: pointer;
 }
 
-.monitor{
-  position: relative;
-  display: inline-block;
+.text{
+  position: absolute;
   width: 50%;
-  text-align: center;
   font-family: CSPraKas;
   font-size: 28pt;
   color: white;
+  transform: translate(50%);
 }
 
-.submonitor{
-  display: inline-block;
+.slide{
+  display: none;
+}
+
+.slide .imgEleH{
   position: relative;
-  width: 100%;
+  width: 50%;
 }
 
 #graph{
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 0px;
 }
