@@ -28,6 +28,17 @@ body {
   position: relative;
   width: 100%;
 }
+
+.head_title{
+  position: absolute;
+  font-family: Deepsea;
+  color: #ededed;
+  margin-left: 7%;
+  font-size: 3em;
+  transform: translate(50%,50%);
+  text-align: center;
+  bottom: 25%;
+}
   
 #cause{
   position: relative;
