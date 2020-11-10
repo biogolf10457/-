@@ -44,8 +44,10 @@
     margin: 0;
     display: inline-block;
     position: relative;
-    width: 39%;
+    width: 35%;
     padding: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
     font-family: CSPraKas;
     font-size: 1.15em;
 }
@@ -56,4 +58,10 @@
 
 .halfcontent h2{
     font-family: CSPraKasBold;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+#midboat{
+    height: 40vh;
 }
