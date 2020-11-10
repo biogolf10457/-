@@ -216,6 +216,7 @@ li a:hover {
   width: 100%;
 }
 .sub-title {
+  position: relative;
   font-family: Deepsea;
   margin-left: 7%;
   transition: 2.5s;

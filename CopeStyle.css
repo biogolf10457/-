@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Deepsea;
+    src: url(Font/UID\ Deep\ sea.ttf);
+  }
+  @font-face {
+    font-family: CSPraKas;
+    src: url(Font/CS_PraKas/CSPraKas.otf);
+  }
+  @font-face {
+    font-family: CSPraKasBold;
+    src: url(Font/CS_PraKas/CSPraKasBold.otf);
+  }
+  @font-face {
+    font-family: Athiti;
+    src: url(Font/Athiti/Athiti-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: AthitiM;
+    src: url(Font/Athiti/Athiti-Medium.ttf);
+  }
+
+#copecontent {
+    position: relative;
+    width: 100%;
+    background-image: url(/Artwork/Cope/Untitled_Artwork-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+}
+
+.sub-title{
+    opacity: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contentContainer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.halfcontent{
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    width: 39%;
+    padding: 5%;
+    font-family: CSPraKas;
+    font-size: 1.15em;
+}
+
+.halfcontent h1{
+    font-family: Deepsea;
+}
+
+.halfcontent h2{
+    font-family: CSPraKasBold;
+}

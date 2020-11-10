@@ -3,17 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="CopeStyle.css"/>
     <link rel="icon" href="/Artwork/Logo_.png" />
     <title>กรุงใต้น้ำ - Cope</title>
 </head>
 <body>
-    
+    <nav>
+        <ul class="horizontal">
+          <li style="float: left; margin-top: 1%">
+            <img src="/Artwork/Logo_.png" alt="" width="100%" />
+          </li>
+          <li><a href="prevention.html">PREVENTION</a></li>
+          <li><a href="#COPE">COPE</a></li>
+          <li><a href="cause.html">CAUSE</a></li>
+          <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+    <div class="scene">
+        <div class="subscene">
+          
+        </div>
+    </div>
+    <div class="scene" id="copecontent">
+      <div class="sub-title">
+        <img src="/Artwork/Home/คาดการณ์พื้นที่เสี่ยง.png" alt="" width="30%">
+      </div>
+      <div class="contentContainer">
+        <div class="halfcontent">เว้น</div>
+        <div class="halfcontent">
+          <h1>นวัตกรรมบ้านลอยน้ำ</h1>
+          <p>เหตุการณ์น้ำท่วมในเมืองไทย เป็นสาเหตุที่เป็นปัญหาและยังคงเกิดขึ้นทุกปี 
+            ในทุกพื้นที่หลายจังหวัดทำให้ผู้คนต้องหาทางปรับตัว หรือแม้กระทั่งคิดค้นเทคโนโลยี 
+            ที่จะสามารถเอาชนะกับภัยพิบัติเหล่านี้ให้ได้ด้วยวิธีต่าง ๆ และหนึ่งในนั้นคือบ้านลอยน้ำที่สามารถใช้งานได้
+          </p>
+          <h2>ประเภทของบ้านลอยน้ำ</h2>
+          <ul>
+            <li>ทุ่นลอยน้ำอเนกประสงค์</li>
+            <li>ทุ่นลอยน้ำที่ตอบสนองความต้องการที่หลากหลาย</li>
+            <li>เกาะลอยน้ำ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentContainer">
+
+      </div>
+    </div>
+    <script src="/myScript.js">
+      window.addEventListener("scroll", (event2) => {
+        showByClasswTr("sub-title");
+      });
+    </script>
 </body>
 </html>
