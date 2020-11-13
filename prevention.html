@@ -1,60 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="Style.css" />
-    <link rel="stylesheet" href="PreventionStyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" href="/Artwork/Logo_.png" />
-    <title>กรุงใต้น้ำ</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="PreventionStyle.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="icon" href="/Artwork/Logo_.png" />
+  <title>กรุงใต้น้ำ</title>
 </head>
-<body style="background-color: lightblue">
-    <nav>
-      <ul class="horizontal">
-        <li style="float: left; margin-top: 1%">
-          <img src="/Artwork/Logo_.png" alt="" width="100%" />
-        </li>
-        <li><a href="prevention.html">PREVENTION</a></li>
-        <li><a href="cope.html">COPE</a></li>
-        <li><a href="cause.html">CAUSE</a></li>
-        <li><a href="index.html">HOME</a></li>
-      </ul>
-    </nav>
 
-    <div class="scene" id="head1">
-      <div class="subscene">
-        <div class="subscene" style="position: absolute; width: 100%; overflow: hidden">
-          <img class="imgEleH" id="bg1" src="/Artwork/Home/KRUNGTAINAM-01.png" alt="" width="100%"/>
+<body style="background-color: gray">
+  <nav>
+    <ul class="horizontal">
+      <li style="float: left; margin-top: 1%">
+        <img src="/Artwork/Logo_.png" alt="" width="100%" />
+      </li>
+      <li><a href="prevention.html">PREVENTION</a></li>
+      <li><a href="cope.html">COPE</a></li>
+      <li><a href="cause.html">CAUSE</a></li>
+      <li><a href="index.html">HOME</a></li>
+    </ul>
+  </nav>
+
+  <div class="scene" id="head1">
+    <div class="subscene">
+      <img class="imgEleH" id="bg1" src="/Artwork/Home/KRUNGTAINAM-01.png" alt="" width="100%" />
+      <div class="head_title">ป้องกันยังไงให้รอดพ้นจาก2050</div>
+    </div>
+  </div>
+
+  <div class="scene" id="prevent">
+    <div class="vertical-subprevent">
+      <div class="horizon-subprevent">
+        <div class="sub-horizon-subprevent">
+          <img class="pic-prevent" src="/Artwork/Prevent/ลดการใช้แอร์.png">
+        </div>
+        <div class="sub-horizon-subprevent" id="text">
+          <p class="head-text">ลดการใช้แอร์</p>
+          ในสภาพอากาศร้อนๆ บ้านไหนมีแอร์หรือเครื่องปรับอากาศก็คงต้องเปิดเป็นธรรมดา 
+          แต่เครื่องปรับอากาศที่มีใช้กันแทบทุกบ้านนั้นก็เป็นสาเหตุของโลกร้อนเช่นกัน 
+          เนื่องจากเครื่องปรับอากาศเป็นเครื่องใชไฟฟ้าที่กินไฟฟ้าสูง
+        </div>
+      </div>
+      <div class="horizon-subprevent">
+        <div class="sub-horizon-subprevent">
+          <img class="pic-prevent" src="/Artwork/Prevent/ลดการใช้ถุงลพาสติก.png">
+        </div>
+        <div class="sub-horizon-subprevent" id="text">
+          <p class="head-text">ลดการใช้ถุงพลาสติก</p>
+          ถุงพลาสติกเป็นของใช้ที่เราทุกคนคุ้นเคยกันเป็นอย่างดี แต่ถุงพลาสติกเป็นต้นเหตุใหญ่และเป็นสาเหตุของโลกร้อน 
+          เนื่องจากถุงพลาสติกจำเป็นต้องใช้เวลา 450 กว่าปีในการย่อยสลาย 
+          แถมการเผาถุงพลาสติกยังก่อให้เกิดสารพิษที่เป็นมลพิษทางอากาศ 
+          และสัตว์โลกมากมายต้องเสียชีวิตเพราะถุงและขยะพลาสติกที่เราใช้แล้วทิ้ง
+        </div>
+      </div>
+      <div class="horizon-subprevent">
+        <div class="sub-horizon-subprevent">
+          <img class="pic-prevent" src="/Artwork/Prevent/การอนุรักษ์ป่า.png">
+        </div>
+        <div class="sub-horizon-subprevent" id="text">
+          <p class="head-text">การอนุรักษ์ป่า</p>
+          ปลูกสร้างสวนป่า จัดสรรพื้นที่ทำการเกษตร ทำทุ่งหญ้าเลี้ยงสัตว์และคัดเลือกพันธุ์พืช 
+          เช่น ปลูกหญ้าแฝกเพื่อชะลอการไหลของน้ำ
         </div>
       </div>
     </div>
-
-    <div class="scene" id="bottom">
-      <div class="subscene">
-  
+    <div class="vertical-subprevent">
+      <div class="horizon-subprevent">
+        <div class="sub-horizon-subprevent">
+          <img class="pic-prevent" src="/Artwork/Prevent/การสร้างอ่างเก็บน้ำ.png">
+        </div>
+        <div class="sub-horizon-subprevent" id="text">
+          <p class="head-text">การสร้างอ่างเก็บน้ำ</p>
+          การผันทางน้ำจากแม่น้ำให้ไหลลงสู่อ่างเก็บน้ำและค่อยๆระบายออกเป็นระยะๆ 
+          จะทำให้ที่ราบสองข้างฝั่งไม่เกิดน้ำ
+        </div>
       </div>
-      <footer>
-        <div class="footHalf">
-          <img src="/Artwork/Logo_.png" alt="" width="16%" />
-          <div id="footTitle">KRUNGTAINAM (กรุงใต้น้ำ)</div>
+      <div class="horizon-subprevent">
+        <div class="sub-horizon-subprevent">
+          <img class="pic-prevent" src="/Artwork/Prevent/การสร้างตึกสูง.png">
         </div>
-        <div class="footHalf">
-          <p>
-            ผลงานของนักศึกษาสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-            <br />
-            คณะสถาปัตยกรรมศาสตร์ และคณะเทคโนโลยีสารสนเทศ
-          </p>
+        <div class="sub-horizon-subprevent" id="text">
+          <p class="head-text">การสร้างตึกสูง</p>
+          ที่ผ่านมา เราโง่เขลามากที่ถมสร้างตึกสูงมากมายบนพื้นดินที่เป็น “โคลน” 
+          น้ำหนักที่ถูกกดทับมากขึ้นทุกปีทำให้ฐานเมืองแข็งๆด้านบนที่เสาเข็มเกาะอยู่จมลงในโคลนด้านล่างมากขึ้นๆ
         </div>
-      </footer>
+      </div>
+      <div class="horizon-subprevent">
+        <div class="sub-horizon-subprevent">
+          <img class="pic-prevent" src="/Artwork/Prevent/กำแพงกันคลื่น.png">
+        </div>
+        <div class="sub-horizon-subprevent" id="text">
+          <p class="head-text">กำแพงกันคลื่น</p>
+          เป็นโครงสร้างที่วางตัวในแนวขนานหรือเกือบจะขนานกับชายฝั่งทะเลเพื่อแบ่งเขตแดนที่เป็นดินกับน้ำ 
+          วัตถุประสงค์หลักของโครงสร้างชนิดนี้ใช้ในการป้องกันการกัดเซาะของดินจากคลื่นและกระแสน้ำ 
+          โดยจะพยายามกันน้ำกับดินออกจากกัน
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="scene" id="bottom">
+    <div class="subscene">
+      
+    </div>
+    <footer>
+      <div class="footHalf">
+        <img src="/Artwork/Logo_.png" alt="" width="16%" />
+        <div id="footTitle">KRUNGTAINAM (กรุงใต้น้ำ)</div>
+      </div>
+      <div class="footHalf">
+        <p>
+          ผลงานของนักศึกษาสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+          <br />
+          คณะสถาปัตยกรรมศาสตร์ และคณะเทคโนโลยีสารสนเทศ
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>

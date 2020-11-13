@@ -1,5 +1,85 @@
 body{
-background-color: lightblue;
   color: #ededed;
   overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Deepsea;
+  src: url(Font/UID\ Deep\ sea.ttf);
+}
+@font-face {
+  font-family: CSPraKas;
+  src: url(Font/CS_PraKas/CSPraKas.otf);
+}
+@font-face {
+  font-family: Athiti;
+  src: url(Font/Athiti/Athiti-SemiBold.ttf);
+}
+@font-face {
+  font-family: AthitiM;
+  src: url(Font/Athiti/Athiti-Medium.ttf);
+}
+
+#head1{
+  position: relative;
+  width: 100%;
+}
+
+.head_title{
+  position: absolute;
+  font-family: Deepsea;
+  color: #ededed;
+  margin-left: 7%;
+  font-size: 3em;
+  transform: translate(150%);
+  text-align: center;
+  bottom: 20%;
+}
+
+#prevent{
+  position: relative;
+  width: 100%;
+  height: 200vh;
+}
+
+.vertical-subprevent{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50%;
+
+}
+
+.horizon-subprevent{
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+}
+
+.sub-horizon-subprevent{
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.pic-prevent{
+  position: absolute;
+  width: 50%;
+  transform: translate(50%);
+}
+
+.head-text{
+  font-size: 1.5em;
+  font-family: Deepsea;
+}
+
+#text{
+  position: absolute;
+  width: 100%;
+  font-family: CSPraKas;
+  font-size: 1.25em;
+  color: #ededed;
+  padding-left: 10%;
+  padding-right: 10%;
 }
