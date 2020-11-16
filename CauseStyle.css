@@ -95,11 +95,6 @@ body {
   display: none;
 }
 
-.slide .imgEleH{
-  position: absolute;
-  width: 30%;
-}
-
 #graph{
   position: relative;
   width: 100%;
