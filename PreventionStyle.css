@@ -113,10 +113,18 @@ body{
 .bottom-button{
   color: #ededed;
   font-family: Athiti;
-  font-size: 1.4em;
+  font-size: 2em;
+  text-decoration: none;
   background-color: rgb(104, 104, 104);
   padding:1% 5%;
   border-radius: 40px;
   width: 10%;
   cursor: pointer;
+}
+
+.bottom-button:hover{
+  text-decoration: none;
+  color: #ededed;
+  text-shadow: 0px 0px 5px #ededed;
+  background-color: rgba(104, 104, 104, 80%);
 }
