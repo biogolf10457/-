@@ -256,13 +256,16 @@ body {
 
 @keyframes ice6Animation{
   0% {
-    transform: translate(23%, 95%);
+    transform: translate(23%, 92.5%);
   }
-  50% {
+  25% {
     transform: translate(23%, 90%);
   }
-  100% {
+  75% {
     transform: translate(23%, 95%);
+  }
+  100% {
+    transform: translate(23%, 92.5%);
   }
 }
 
@@ -297,13 +300,16 @@ body {
 
 @keyframes ice8Animation{
   0% {
-    transform: translate(35%, 240%);
+    transform: translate(35%, 238%);
   }
-  50% {
+  30% {
     transform: translate(35%, 235%);
   }
-  100% {
+  80% {
     transform: translate(35%, 240%);
+  }
+  100% {
+    transform: translate(35%, 238%);
   }
 }
 
@@ -316,13 +322,16 @@ body {
 
 @keyframes ice9Animation{
   0% {
-    transform: translate(80%, 150%);
+    transform: translate(80%, 147%);
   }
-  50% {
+  20% {
     transform: translate(80%, 145%);
   }
-  100% {
+  70% {
     transform: translate(80%, 150%);
+  }
+  100% {
+    transform: translate(80%, 147%);
   }
 }
 
@@ -354,13 +363,16 @@ body {
 
 @keyframes ice11Animation{
   0% {
-    transform: translate(55%, -430%);
+    transform: translate(55%, -431%);
   }
-  50% {
+  40% {
     transform: translate(55%, -435%);
   }
-  100% {
+  90% {
     transform: translate(55%, -430%);
+  }
+  100% {
+    transform: translate(55%, -431%);
   }
 }
 
@@ -373,13 +385,16 @@ body {
 
 @keyframes ice12Animation{
   0% {
-    transform: translate(0%, -320%);
+    transform: translate(0%, -322%);
   }
-  50% {
+  30% {
     transform: translate(0%, -325%);
   }
-  100% {
+  80% {
     transform: translate(0%, -320%);
+  }
+  100% {
+    transform: translate(0%, -322%);
   }
 }
 
