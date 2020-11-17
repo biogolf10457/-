@@ -2,6 +2,8 @@ body {
   background-color: lightblue;
   color: #ededed;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -97,7 +99,7 @@ li a:hover {
   font-size: 2em;
   text-align: center;
   position: absolute;
-  transform: translate(-50%, -360%);
+  transform: translate(-50%, -900%);
   bottom: -10%;
   left: 50%;
   font-family: Deepsea;
@@ -126,6 +128,15 @@ li a:hover {
 .imgEle {
   position: absolute;
   transform: translate(-50%, -50%);
+}
+#bg1{
+  transform: translate(-50%, -20%);
+}
+#bg2{
+  transform: translate(-50%, -15%);
+}
+#bg3{
+  transform: translate(-50%, -20%);
 }
 #sign1 {
   animation-name: sign1Animation;
@@ -199,7 +210,7 @@ li a:hover {
 .subscene {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 56vw;
   position: relative;
 }
 #head1 {

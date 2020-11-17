@@ -2,27 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css"/>
     <link rel="stylesheet" href="CopeStyle.css"/>
     <link rel="icon" href="/Artwork/Logo_.png" />
     <title>กรุงใต้น้ำ - Cope</title>
 </head>
 <body>
-    <nav>
-        <ul class="horizontal">
-          <li style="float: left; margin-top: 1%">
-            <img src="/Artwork/Logo_.png" alt="" width="100%" />
-          </li>
-          <li><a href="prevention.html">PREVENTION</a></li>
-          <li><a href="cope.html">COPE</a></li>
-          <li><a href="cause.html">CAUSE</a></li>
-          <li><a href="index.html">HOME</a></li>
-        </ul>
-    </nav>
     <div class="scene">
-        <div class="subscene">
-          
+        <div class="subscene" id="copehead">
+          <nav>
+            <ul class="horizontal">
+              <li style="float: left; margin-top: 1%">
+                <img src="/Artwork/Logo_.png" alt="" width="100%" />
+              </li>
+              <li><a href="prevention.html">PREVENTION</a></li>
+              <li><a href="#COPE">COPE</a></li>
+              <li><a href="cause.html">CAUSE</a></li>
+              <li><a href="index.html">HOME</a></li>
+            </ul>
+          </nav>
         </div>
     </div>
     <div class="scene" id="copecontent">
@@ -66,7 +65,23 @@
           
         </div>
       </div>
+      <div class="contentContainer">
+        
+      </div>
     </div>
+    <footer>
+      <div class="footHalf">
+        <img src="/Artwork/Logo_.png" alt="" width="16%" />
+        <div id="footTitle">KRUNGTAINAM (กรุงใต้น้ำ)</div>
+      </div>
+      <div class="footHalf">
+        <p>
+          ผลงานของนักศึกษาสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+          <br />
+          คณะสถาปัตยกรรมศาสตร์ และคณะเทคโนโลยีสารสนเทศ
+        </p>
+      </div>
+    </footer>
     <script src="/myScript.js">
       window.addEventListener("scroll", (event2) => {
         showByClasswTr("sub-title");
