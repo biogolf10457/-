@@ -30,9 +30,13 @@ body {
 }
 
 .head{
+  position: absolute;
   font-family: Athiti;
   color: #ededed;
-  font-size: 285pt;
+  font-size: 20vw;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%,-30%);
 }
 
 .head_title{
