@@ -23,6 +23,18 @@ body{
 #head1{
   position: relative;
   width: 100%;
+  background-image: none;
+  background-color: black;
+}
+
+.head{
+  position: absolute;
+  font-family: Athiti;
+  color: #ededed;
+  font-size: 10vw;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 0%);
 }
 
 .head_title{
@@ -30,29 +42,30 @@ body{
   width: 100%;
   font-family: Deepsea;
   color: #ededed;
-  font-size: 3em;
-  transform: translate(15%,750%);
+  font-size: 3vw;
+  top: 48%;
+  transform: translate(15%, 0%);
   text-align: center;
 }
 
 #prevent{
   position: relative;
   width: 100%;
-  height: 200vh;
+  height: auto;
 }
 
 .vertical-subprevent{
   position: relative;
   display: block;
   width: 100%;
-  height: 50%;
-  margin-bottom: 10%;
+  height: auto;
+  margin-bottom: 20vw;
 }
 
 .horizon-subprevent{
   position: relative;
   display: inline-block;
-  width: 33%;
+  width: 49vw;
   height: 100%;
 }
 
@@ -63,35 +76,38 @@ body{
 }
 
 .pic-prevent{
-  position: absolute;
-  width: 50%;
-  transform: translate(50%);
+  position: relative;
+  width: 30%;
+  transform: translate(100%);
+  margin-bottom: 3vw;
 }
 
 .head-text{
-  font-size: 1.5em;
+  font-size: 2vw;
   font-family: Deepsea;
+  text-align: center;
 }
 
 #text{
-  position: absolute;
+  position: relative;
   width: 100%;
   font-family: CSPraKas;
-  font-size: 1.25em;
+  font-size: 1.25vw;
+  text-align: center;
   color: #ededed;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 #bottom{
-  padding-top: 15vh;
+  padding-top: 15vw;
 }
 
 .sub-bottom-up{
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 50vh;
+  height: auto;
   color: #ededed;
   text-align: center;
 }
@@ -100,8 +116,9 @@ body{
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 50vh;
+  height: 20vw;
   text-align: center;
+  padding-top: 5%;
 }
 
 .bottom-text{
