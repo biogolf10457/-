@@ -25,7 +25,7 @@
     background-image: url(/Artwork/Cope/Untitled_Artwork-1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 200px;
+    padding-bottom: 30vw;
 }
 
 #copehead{
@@ -69,5 +69,5 @@
 }
 
 #midboat{
-    height: 40vh;
+    height: 20vw;
 }
