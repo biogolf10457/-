@@ -32,13 +32,16 @@ nav {
 
 footer {
   margin: 0;
-  padding: 4% 0% 2% 0%;
+  padding: 10% 0% 2% 0%;
   background-color: black;
 }
 .footHalf {
   width: 49%;
   padding-left: 7%;
   display: inline-block;
+}
+.footHalf img{
+  width: 10%;
 }
 #footTitle {
   font-family: Athiti;
@@ -80,12 +83,13 @@ li a:hover {
 .nextPageButton {
   font-family: Athiti;
   color: #ededed;
-  background-color: rgb(104, 104, 104);
+  background-color:#F04342;
   text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 3%;
   font-size: 1.25em;
   border-radius: 20px;
+  width: 115%;
+  margin-top: 10%
 }
 
 .scene {
