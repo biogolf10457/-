@@ -235,7 +235,7 @@ li a:hover {
   position: relative;
   font-family: Deepsea;
   margin-left: 7%;
-  transition: 2.5s;
+  transition: 2s;
   opacity: 0%;
 }
 #st1 {
@@ -261,7 +261,7 @@ li a:hover {
   margin-bottom: 200px;
   position: relative;
   opacity: 0;
-  transition: 2.5s;
+  transition: 2s;
 }
 .midTL {
   width: 5%;
@@ -291,7 +291,7 @@ li a:hover {
 #redmap {
   /* margin-left: 7%; */
   position: relative;
-  transition: 2.5s;
+  transition: 2s;
   opacity: 0%;
 }
 #redmap img {
@@ -328,7 +328,7 @@ li a:hover {
 #effCountry {
   padding-top: 2.5%;
   color: #ededed;
-  transition: 2.5s;
+  transition: 2s;
   opacity: 0%;
   display: flex;
   flex-direction: column;
