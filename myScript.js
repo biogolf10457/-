@@ -1,3 +1,5 @@
+var w = window.innerWidth;
+var h = window.innerHeight;
 function highlightCircle(cid) {
     var c = document.getElementById(cid);
     var cBCR = c.getBoundingClientRect();

@@ -46,14 +46,14 @@ footer {
 #footTitle {
   font-family: Athiti;
   color: #ededed;
-  font-size: 1em;
+  font-size: 1.1vw;
   display: inline-block;
   margin-left: 4%;
 }
 .footHalf p {
   font-family: AthitiM;
   color: #ededed;
-  font-size: .8em;
+  font-size: 1vw;
 }
 
 ul.horizontal {
@@ -86,7 +86,7 @@ li a:hover {
   background-color:#F04342;
   text-align: center;
   padding: 3%;
-  font-size: 1.25em;
+  font-size: 1.25vw;
   border-radius: 20px;
   width: 115%;
   margin-top: 10%
@@ -101,7 +101,7 @@ li a:hover {
 
 #sub-def-head1 {
   color: #ededed;
-  font-size: 2em;
+  font-size: 2vw;
   text-align: center;
   position: absolute;
   transform: translate(-50%, -800%);
@@ -119,7 +119,7 @@ li a:hover {
   text-align: center;
   color: #ededed;
   font-family: CSPraKas;
-  font-size: 1.15em;
+  font-size: 1.15vw;
   transition: 3s;
   opacity: 0%;
 }
@@ -239,7 +239,7 @@ li a:hover {
   opacity: 0%;
 }
 #st1 {
-  font-size: 1.15em;
+  font-size: 1.15vw;
   color: #ededed;
   margin-left: 2%;
   margin-bottom: 2%;
