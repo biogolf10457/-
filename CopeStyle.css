@@ -55,7 +55,8 @@
     padding-left: 7%;
     padding-right: 7%;
     font-family: CSPraKas;
-    font-size: 1.15em;
+    font-size: 1.25vw;
+    transition: 2s;
 }
 
 .halfcontent h1{
@@ -64,8 +65,8 @@
 
 .halfcontent h2{
     font-family: CSPraKasBold;
-    margin-top: 1.5em;
-    margin-bottom: .5em;
+    margin-top: 1.vw;
+    margin-bottom: .5vw;
 }
 
 #midboat{
@@ -81,4 +82,8 @@
 #tt3{
   font-size: 6.5vw;
   color: #f04342;
+}
+
+.slide{
+  transition: 2s;
 }
