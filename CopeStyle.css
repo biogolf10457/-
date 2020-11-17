@@ -29,12 +29,11 @@
 }
 
 #copehead{
-  background-image: url(/Artwork/Cope/Comp\ 1.gif);
+  background-image: url(/Artwork/Cope/Cope.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 .sub-title{
     opacity: 100%;
     padding-top: 5%;
