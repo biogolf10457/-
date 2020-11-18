@@ -71,6 +71,7 @@
 
 #midboat{
     height: 20vw;
+    overflow-x: hidden;
 }
 
 #tt1{
@@ -86,4 +87,102 @@
 
 .slide{
   transition: 2s;
+}
+
+#house1{
+  animation-name: house1Animation;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes house1Animation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -52.5%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+#house2{
+  animation-name: house2Animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes house2Animation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -55%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+#house3{
+  animation-name: house3Animation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes house3Animation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -58%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+#boat1{
+  animation-name: boat1Animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes boat1Animation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -46%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+#boat2{
+  animation-name: boat2Animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+@keyframes boat2Animation {
+  0% {
+    left: -15%;
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-50%, -45%);
+  }
+  50% {
+    transform: translate(-50%, -55%);
+  }
+  75% {
+    transform: translate(-50%, -45%);
+  }
+  100% {
+    left: 115%;
+    transform: translate(-50%, -50%);
+  }
 }
