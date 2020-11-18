@@ -78,6 +78,8 @@ li a {
 }
 li a:hover {
   transition: 1s;
+  text-decoration: none;
+  color: #F04342;
 }
 
 .nextPageButton {
@@ -89,7 +91,11 @@ li a:hover {
   font-size: 1.25vw;
   border-radius: 20px;
   width: 115%;
-  margin-top: 10%
+  margin-top: 10%;
+  text-decoration: none;
+}
+.nextPageButton:hover{
+  text-decoration: none;
 }
 
 .scene {
@@ -128,7 +134,11 @@ li a:hover {
   bottom: -10%;
   left: 50%;
   transform: translate(-50%, 0);
-  transition: 0.1s;
+  transition: 0.2s;
+}
+.openStart{
+  bottom: -30%;
+  opacity: 0;
 }
 .imgEle {
   position: absolute;
@@ -358,4 +368,11 @@ li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.alink{
+  text-decoration: none;
+}
+.alink:hover{
+  text-decoration: none;
 }

@@ -36,21 +36,21 @@
           style="position: absolute; width: 100%; overflow: hidden"
         >
           <img
-            class="imgEleH"
+            class="imgEleH openStart"
             id="bg1"
             src="/Artwork/Home/Page02_Artwork.png"
             alt=""
             width="100%"
           />
           <img
-            class="imgEleH"
+            class="imgEleH openStart"
             id="bg2"
             src="/Artwork/Home/Page03_Artwork.png"
             alt=""
             width="100%"
           />
           <img
-            class="imgEleH"
+            class="imgEleH openStart"
             id="bg3"
             src="/Artwork/Home/KRUNGTAINAM-01.png"
             alt=""
@@ -58,7 +58,7 @@
           />
         </div>
         <img
-          class="imgEleH"
+          class="imgEleH openStart"
           id="bg4"
           src="/Artwork/Home/KRUNGTAINAM-02.png"
           alt=""
@@ -66,7 +66,7 @@
           style="transform: translate(-50%, 28%)"
         />
         <img
-          class="imgEleH"
+          class="imgEleH openStart"
           id="bg5"
           src="/Artwork/Home/KRUNGTAINAM-03.png"
           alt=""
@@ -298,7 +298,7 @@
               </div>
             </div>
           </div>
-          <a href="cause.html">
+          <a href="cause.html"  class="alink">
             <div
             class="nextPageButton"
             >
@@ -359,6 +359,20 @@
       console.log(w);
       console.log(h);
       var head1 = document.getElementById("head1");
+      //opening head start
+      var openStart = document.getElementsByClassName("openStart");
+      for (let i = 0; i < openStart.length; i++) {
+        openStart[i].style.transition = "1.2s";
+        openStart[i].style.bottom = "-10%";
+        openStart[i].style.opacity = "100%";
+      }
+      setTimeout(changeTransition, 1300);
+      function changeTransition() {
+        for (let i = 0; i < openStart.length; i++) {
+          openStart[i].style.transition = "0.1s";
+        }
+      }
+      //opening head end
       window.addEventListener("mousemove", (event1) => {
         var x = event1.screenX;
         var y = event1.screenY;
