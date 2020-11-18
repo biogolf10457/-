@@ -43,13 +43,7 @@ body {
 .head_title{
   position: absolute;
   width: 100%;
-  font-family: Deepsea;
-  color: #ededed;
-  font-size: 3.5vw;
-  transform: translate(0%,55%);
-  text-align: center;
-  bottom: 25%;
-  top: 0%;
+  top: 53%;
 }
   
 #cause{
@@ -58,31 +52,6 @@ body {
   width: 100vw;
   height: auto;
   margin-top: 60vw;
-}
-
-.cause{
-  transition: 2s;
-}
-
-.cause-head{
-  position: absolute;
-  width: 40vw;
-  font-family: Deepsea;
-  font-size: 4vw;
-  color: #ededed;
-  left: 7vw;
-  margin-bottom: 25vw;
-  transform: translate(0%,-340%);
-}
-
-.jomnam{
-  position: absolute;
-  color: red;
-  text-decoration: none;
-  font-size: 10vw;
-  right: 0%;
-  top: 0%;
-  transform: translate(-35%,5%);
 }
 
 .left{
@@ -150,15 +119,13 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 20vw;
+  margin-top: 35vw;
 }
 
 .title_text{
   position: relative;
-  font-family: Deepsea;
-  color: #ededed;
-  margin-left: 7%;
-  font-size: 3vw;
+  width: 100%;
+  height: auto;
 }
 
 .graph-img{
@@ -173,7 +140,7 @@ body {
   font-family: CSPraKas;
   font-size: 1.25vw;
   color: #ededed;
-  margin-bottom: 5%;
+  margin-bottom: 10vw;
 }
 
 .text-button{
@@ -551,5 +518,44 @@ body {
   }
   100% {
     transform: translate(75%, 0%);
+  }
+}
+
+
+
+#s1{
+  animation-name: worldHot;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes worldHot{
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+#s2{
+  animation-name: seaIncrease;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+ 
+@keyframes seaIncrease{
+  0% {
+    width: 30%;
+    transform: translate(-50%, 10%);
+  }
+  100% {
+    width: 50%;
+    transform: translate(-50%, 30%);
   }
 }
