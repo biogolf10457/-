@@ -192,10 +192,10 @@
       showById("s2");
       showById("s3");
       showById("s4");
-      //showByClass("text");
+      //showByClasstxtwTr1("text");
       showByIdwTr2("head-graph");
       showByClasswTr("graph-img");
-      showByClasstxtwTr("graph-text");
+      showByClasstxtwTr2("graph-text");
     });
 
     function showByClass(eclass) {
@@ -234,7 +234,26 @@
       }
     }
 
-    function showByClasstxtwTr(eclass) {
+    function showByClasstxtwTr1(eclass) {
+      var elms = document.getElementsByClassName(eclass);
+      for (let i = 0; i < elms.length; i++) {
+        if (
+          elms[i].getBoundingClientRect().top > h / 3 &&
+          elms[i].getBoundingClientRect().top < (2 * h) / 2.5
+        ) {
+          elms[i].style.opacity = "100%";
+          elms[i].style.transform = "translate(50%,0)";
+        }
+      }
+      if (elms[0].getBoundingClientRect().top > (2 * h) / 2.5) {
+        for (let i = 0; i < elms.length; i++) {
+          elms[i].style.opacity = "0%";
+          elms[i].style.transform = "translate(50%,5%)";
+        }
+      }
+    }
+
+    function showByClasstxtwTr2(eclass) {
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
