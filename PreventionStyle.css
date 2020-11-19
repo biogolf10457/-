@@ -1,13 +1,3 @@
-body{
-  background-image: url(/Artwork/Prevent/BG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ededed;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
 @font-face {
   font-family: Deepsea;
   src: url(Font/UID\ Deep\ sea.ttf);
@@ -23,6 +13,17 @@ body{
 @font-face {
   font-family: AthitiM;
   src: url(Font/Athiti/Athiti-Medium.ttf);
+}
+
+.preventContent{
+  position: relative;
+  background-image: url(/Artwork/Prevent/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ededed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .subscene{
@@ -67,6 +68,7 @@ body{
   position: relative;
   width: 100%;
   height: auto;
+  padding-top: 10vw;
 }
 
 .head-prevent{
@@ -84,7 +86,7 @@ body{
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 20vw;
+  margin-bottom: 30vw;
 }
 
 .left-horizon-subprevent{
@@ -118,9 +120,13 @@ body{
 }
 
 .head-text{
-  font-size: 2.2vw;
-  font-family: Deepsea;
+  height: 5vw;
   text-align: center;
+}
+
+.imgEle{
+  position: absolute;
+  transform: translate(-50%, -30%);
 }
 
 #text{
@@ -136,6 +142,12 @@ body{
 
 #bottom{
   padding-top: 5vw;
+  overflow-x: hidden;
+}
+
+.pic-bottom{
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .sub-bottom-up{
@@ -145,34 +157,25 @@ body{
   height: auto;
   color: #ededed;
   text-align: center;
+  padding-top: 15vw;
+  z-index: 3;
 }
 
 .sub-bottom-down{
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 40vw;
+  height: 25vw;
   text-align: center;
-  padding-top: 5%;
-}
-
-.bottom-text{
-  font-family: Deepsea;
-  font-size: 3em;
-  padding-top: 10%;
-}
-
-b{
-  color: red;
-  text-decoration: none;
+  z-index: 3;
 }
 
 .bottom-button{
   color: #ededed;
   font-family: Athiti;
-  font-size: 2em;
+  font-size: 2vw;
   text-decoration: none;
-  background-color:  #b2b2b2;
+  background-color:  #F04342;
   padding:0% 2%;
   border-radius: 40px;
   width: 10%;
@@ -181,7 +184,40 @@ b{
 
 .bottom-button:hover{
   text-decoration: none;
-  color: #ededed;
-  text-shadow: 0px 0px 5px #ededed;
-  background-color:rgba(178, 178, 178,80%);
+  color: #F04342;
+  background-color:#ededed;
+  transition: 1s;
+}
+
+#bus{
+  animation-name: busAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes busAnimation{
+  0%{
+    left: 150%;
+  }
+  
+  100%{
+    left: 10%;
+  }
+}
+
+#taxi{
+  animation-name: taxiAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes taxiAnimation{
+  0%{
+    left: -45%;
+  }
+  
+  100%{
+    left: 100%;
+  }
 }
