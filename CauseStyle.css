@@ -441,13 +441,13 @@ body {
 
 @keyframes ice16Animation{
   0% {
-    transform: translate(0%, 50%);
-  }
-  50% {
     transform: translate(-5%, 50%);
   }
-  100% {
+  50% {
     transform: translate(0%, 50%);
+  }
+  100% {
+    transform: translate(-5%, 50%);
   }
 }
 
@@ -460,13 +460,13 @@ body {
 
 @keyframes ice17Animation{
   0% {
-    transform: translate(0%, 50%);
+    transform: translate(-10%, 50%);
   }
   50% {
-    transform: translate(-5%, 50%);
+    transform: translate(0%, 50%);
   }
   100% {
-    transform: translate(0%, 50%);
+    transform: translate(-10%, 50%);
   }
 }
 
