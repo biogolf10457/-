@@ -93,9 +93,13 @@ li a:hover {
   width: 115%;
   margin-top: 10%;
   text-decoration: none;
+  transition: .5s;
 }
 .nextPageButton:hover{
   text-decoration: none;
+  color: #F04342;
+  background-color: #ededed;
+  transition: .5s;
 }
 
 .scene {
@@ -306,6 +310,11 @@ li a:hover {
 }
 #redmap img {
   width: 95%;
+}
+#province{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #hidmap {
   position: absolute;
