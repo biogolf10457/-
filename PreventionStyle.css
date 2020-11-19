@@ -1,6 +1,11 @@
 body{
+  background-image: url(/Artwork/Prevent/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ededed;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -20,18 +25,30 @@ body{
   src: url(Font/Athiti/Athiti-Medium.ttf);
 }
 
+.subscene{
+  margin: 0;
+  padding: 0;
+  height: 50vw;
+  position: relative;
+}
+
+.headImg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 #head1{
   position: relative;
   width: 100%;
   background-image: none;
-  background-color: black;
 }
 
 .head{
   position: absolute;
   font-family: Athiti;
   color: #ededed;
-  font-size: 10vw;
+  font-size: 9vw;
   left: 50%;
   top: 25%;
   transform: translate(-50%, 0%);
@@ -39,13 +56,11 @@ body{
 
 .head_title{
   position: absolute;
-  width: 100%;
   font-family: Deepsea;
   color: #ededed;
-  font-size: 3vw;
-  top: 48%;
-  transform: translate(15%, 0%);
-  text-align: center;
+  width: 50%;
+  top: 45%;
+  transform: translate(90%);
 }
 
 #prevent{
@@ -56,10 +71,6 @@ body{
 
 .head-prevent{
   position: relative;
-  font-family: Deepsea;
-  color: #ededed;
-  font-size: 3vw;
-  left: 7vw;
 }
 
 .big-head-prevent{
