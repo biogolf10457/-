@@ -65,6 +65,7 @@ body {
   margin-left: 10vw;
   transform: translatey(-200%);
   filter: brightness(70%);
+  transition: 0.5s;
 }
 .left:hover{
   filter: brightness(110%);
@@ -83,6 +84,7 @@ body {
   margin-right: 10vw;
   transform: translatey(-200%);
   filter: brightness(70%);
+  transition: 0.5s;
 }
 .right:hover{
   filter: brightness(110%);
@@ -98,6 +100,7 @@ body {
   transform: translate(50%);
   padding-top: 5vw;
   text-align: center;
+  transition: 0.5s;
 }
 
 .slide{
@@ -137,7 +140,8 @@ body {
 .graph-img{
   position: relative;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 1vw;
+  transition: .5s;
 }
 
 .graph-text{
@@ -147,6 +151,7 @@ body {
   font-size: 1.25vw;
   color: #ededed;
   margin-bottom: 10vw;
+  transition: .5s;
 }
 
 .text-button{
@@ -530,6 +535,7 @@ body {
 
 
 #s1{
+  transition: 0.5s;
   animation-name: worldHot;
   animation-duration: 2s;
   animation-iteration-count: infinite;
