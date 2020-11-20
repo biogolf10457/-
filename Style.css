@@ -215,9 +215,8 @@ li a:hover {
   position: relative;
 }
 #redlight {
-  width: 10%;
+  width: 20%;
   height: 100%;
-  background-color: #f04342;
   position: absolute;
   top: 0%;
   left: 50%;
