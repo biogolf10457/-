@@ -23,6 +23,19 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.water-scroll{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.water{
+  width: 100%;
+  transform: translatey(15%);
 }
 
 .subscene{
@@ -63,6 +76,7 @@
 
 .head-prevent{
   position: relative;
+  transition: 0.5s;
 }
 
 .big-head-prevent{

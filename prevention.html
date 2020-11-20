@@ -26,7 +26,9 @@
       </ul>
     </nav>
 
-
+    <div class="water-scroll">
+      <img class="water" src="/Artwork/Prevent/คลื่นน้ำที่ตามลงมาเวลา scroll.png"/>
+    </div>
     <div class="scene" id="head1">
       <div class="subscene"">
         <div class="subscene" id="prevention" style="position: absolute; width: 100%; overflow: hidden">
@@ -195,7 +197,8 @@
     window.addEventListener("scroll", (event) => {
       scrollBG("prevention", 22);
       scrollBG2("elecpost", -70);
-      showByClasswTr("vertical-subprevent")
+      showByClasswTr("vertical-subprevent");
+      showByClasswTr("head-prevent")
     });
 
     function showByClasswTr(eclass) {
