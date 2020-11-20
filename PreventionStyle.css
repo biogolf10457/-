@@ -20,7 +20,6 @@
   background-image: url(/Artwork/Prevent/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ededed;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -55,15 +54,6 @@
   transform: translate(-50%, 0%);
 }
 
-.head_title{
-  position: absolute;
-  font-family: Deepsea;
-  color: #ededed;
-  width: 50%;
-  top: 45%;
-  transform: translate(90%);
-}
-
 #prevent{
   position: relative;
   width: 100%;
@@ -87,6 +77,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 30vw;
+  transition: 0.5s;
 }
 
 .left-horizon-subprevent{
@@ -219,5 +210,81 @@
   
   100%{
     left: 100%;
+  }
+}
+
+#bg1{
+  animation-name: bg1Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg1Animation{
+  0%{
+    transform: translate(-90%, 35%);
+  }
+  50%{
+    transform: translate(-90%, 37%);
+  }
+  100%{
+    transform: translate(-90%, 35%);
+  }
+}
+
+#bg2{
+  animation-name: bg2Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg2Animation{
+  0%{
+    transform: translate(-55%, 110%);
+  }
+  50%{
+    transform: translate(-55%, 113%);
+  }
+  100%{
+    transform: translate(-55%, 110%);
+  }
+}
+
+#bg3{
+  animation-name: bg3Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg3Animation{
+  0%{
+    transform: translate(10%, 160%)
+  }
+  50%{
+    transform: translate(10%, 156%)
+  }
+  100%{
+    transform: translate(10%, 160%)
+  }
+}
+
+#bg4{
+  animation-name: bg4Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg4Animation{
+  0%{
+    transform: translate(30%, 75%);
+  }
+  50%{
+    transform: translate(30%, 78%);
+  }
+  100%{
+    transform: translate(30%, 75%);
   }
 }

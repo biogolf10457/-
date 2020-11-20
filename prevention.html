@@ -28,24 +28,27 @@
 
 
     <div class="scene" id="head1">
-      <div class="subscene">
-        <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-6.png" width="100%" />
-        <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-7.png" width="60%"
+      <div class="subscene"">
+        <div class="subscene" id="prevention" style="position: absolute; width: 100%; overflow: hidden">
+          <img class="headImg" id="elecpost" src="/Artwork/Prevent/Prevent_Artwork-6.png" width="100%" />
+          <div class="head">PREVENTION</div>
+          <img class="headImg" src="/Artwork/Prevent/Text_ป้องกันยังไงให้รอดพ้นจาก2050.png" width="50%" 
+            style="bottom: 35%;"/>
+        </div>
+
+        <img class="headImg" id="bg1" src="/Artwork/Prevent/Prevent_Artwork-7.png" width="60%"
           style="transform: translate(-90%, 35%);" />
-        <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-8.png" width="30%"
+        <img class="headImg" id="bg2" src="/Artwork/Prevent/Prevent_Artwork-8.png" width="30%"
           style="transform: translate(-55%, 110%);" />
-        <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-9.png" width="20%"
+        <img class="headImg" id="bg3" src="/Artwork/Prevent/Prevent_Artwork-9.png" width="20%"
           style="transform: translate(10%, 160%);" />
-        <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-10.png" width="40%"
+        <img class="headImg" id="bg4" src="/Artwork/Prevent/Prevent_Artwork-10.png" width="40%"
           style="transform: translate(30%, 75%);" />
         <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-11.png" width="100%"
           style="transform: translate(-50%, 70%);" />
       </div>
-      <div class="head">PREVENTION</div>
-      <div class="head_title">
-        <img src="/Artwork/Prevent/Text_ป้องกันยังไงให้รอดพ้นจาก2050.png" width="70%" />
-      </div>
     </div>
+
 
 
 
@@ -156,8 +159,8 @@
         <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-4 2.png" width="100%"
           style="transform: translate(-50%, -18%); z-index: 1;" />
         <img class="headImg" id="bus" src="/Artwork/Prevent/Prevent_Artwork-3.png" " 
-          style="width:40%; transform: translate(-120%, 150%); z-index: 0;"/>
-        <img class="headImg" id="taxi" src="/Artwork/Prevent/Prevent_Artwork-5.png" 
+          style=" width:40%; transform: translate(-120%, 150%); z-index: 0;" />
+        <img class="headImg" id="taxi" src="/Artwork/Prevent/Prevent_Artwork-5.png"
           style="width:50%; transform: translate(0%, 170%); z-index: 2;" />
       </div>
       <div class="sub-bottom-up">
@@ -187,7 +190,44 @@
     </div>
   </footer>
   <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    window.addEventListener("scroll", (event) => {
+      scrollBG("prevention", 22);
+      scrollBG2("elecpost", -70);
+      showByClasswTr("vertical-subprevent")
+    });
 
+    function showByClasswTr(eclass) {
+      var elms = document.getElementsByClassName(eclass);
+      for (let i = 0; i < elms.length; i++) {
+        if (
+          elms[i].getBoundingClientRect().top > h / 3 &&
+          elms[i].getBoundingClientRect().top < (2 * h) / 4
+        ) {
+          elms[i].style.opacity = "100%";
+          elms[i].style.transform = "translate(0,0)";
+        }
+      }
+      if (elms[0].getBoundingClientRect().top > (2 * h) / 4) {
+        for (let i = 0; i < elms.length; i++) {
+          elms[i].style.opacity = "0%";
+          elms[i].style.transform = "translate(0,5%)";
+        }
+      }
+    }
+   
+     // Scroll Head Prevent
+     function scrollBG(eid, scale, start) {
+      var start = 0;
+      var add = head1.getBoundingClientRect().top / scale;
+      document.getElementById(eid).style.bottom = start + add + "%";
+    }
+    function scrollBG2(eid, scale, start) {
+      var start = -4;
+      var add = head1.getBoundingClientRect().top / scale;
+      document.getElementById(eid).style.bottom = start + add + "%";
+    }
   </script>
 </body>
 
