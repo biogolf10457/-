@@ -28,7 +28,7 @@
 
 
 
-    <div class="water-scr">
+    <div class="water-scr" id="water-scr">
       <img class="water" src="/Artwork/Prevent/คลื่นน้ำที่ตามลงมาเวลา scroll.png" style="transform: translatey(20%);" />
     </div>
 
@@ -227,10 +227,10 @@
     }
 
     // Scroll Water
-    function scrollWater(eclass, scale, start) {
+    function scrollWater(eid, scale, start) {
       var start = 20;
       var add = preventContent.getBoundingClientRect().top / scale;
-      document.getElementsByClassName(eclass).style.transform = "translatey(start + add + %);";
+      document.getElementById(eid).style.transform = "translatey("+ start + add + "%);";
     }
 
     // Scroll Head Prevent
