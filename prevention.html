@@ -26,30 +26,35 @@
       </ul>
     </nav>
 
-    <div class="water-scroll">
-      <img class="water" src="/Artwork/Prevent/คลื่นน้ำที่ตามลงมาเวลา scroll.png"/>
+
+
+    <div class="water-scr">
+      <img class="water" src="/Artwork/Prevent/คลื่นน้ำที่ตามลงมาเวลา scroll.png" style="transform: translatey(20%);" />
     </div>
+
+
+
     <div class="scene" id="head1">
       <div class="subscene"">
-        <div class="subscene" id="prevention" style="position: absolute; width: 100%; overflow: hidden">
-          <img class="headImg" id="elecpost" src="/Artwork/Prevent/Prevent_Artwork-6.png" width="100%" />
-          <div class="head">PREVENTION</div>
-          <img class="headImg" src="/Artwork/Prevent/Text_ป้องกันยังไงให้รอดพ้นจาก2050.png" width="50%" 
-            style="bottom: 35%;"/>
-        </div>
-
-        <img class="headImg" id="bg1" src="/Artwork/Prevent/Prevent_Artwork-7.png" width="60%"
-          style="transform: translate(-90%, 35%);" />
-        <img class="headImg" id="bg2" src="/Artwork/Prevent/Prevent_Artwork-8.png" width="30%"
-          style="transform: translate(-55%, 110%);" />
-        <img class="headImg" id="bg3" src="/Artwork/Prevent/Prevent_Artwork-9.png" width="20%"
-          style="transform: translate(10%, 160%);" />
-        <img class="headImg" id="bg4" src="/Artwork/Prevent/Prevent_Artwork-10.png" width="40%"
-          style="transform: translate(30%, 75%);" />
-        <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-11.png" width="100%"
-          style="transform: translate(-50%, 70%);" />
+        <div class=" subscene" id="prevention" style="position: absolute; width: 100%; overflow: hidden">
+        <img class="headImg" id="elecpost" src="/Artwork/Prevent/Prevent_Artwork-6.png" width="100%" />
+        <div class="head">PREVENTION</div>
+        <img class="headImg" src="/Artwork/Prevent/Text_ป้องกันยังไงให้รอดพ้นจาก2050.png" width="50%"
+          style="bottom: 35%;" />
       </div>
+
+      <img class="headImg" id="bg1" src="/Artwork/Prevent/Prevent_Artwork-7.png" width="60%"
+        style="transform: translate(-90%, 35%);" />
+      <img class="headImg" id="bg2" src="/Artwork/Prevent/Prevent_Artwork-8.png" width="30%"
+        style="transform: translate(-55%, 110%);" />
+      <img class="headImg" id="bg3" src="/Artwork/Prevent/Prevent_Artwork-9.png" width="20%"
+        style="transform: translate(10%, 160%);" />
+      <img class="headImg" id="bg4" src="/Artwork/Prevent/Prevent_Artwork-10.png" width="40%"
+        style="transform: translate(30%, 75%);" />
+      <img class="headImg" src="/Artwork/Prevent/Prevent_Artwork-11.png" width="100%"
+        style="transform: translate(-50%, 70%);" />
     </div>
+
 
 
 
@@ -165,10 +170,10 @@
         <img class="headImg" id="taxi" src="/Artwork/Prevent/Prevent_Artwork-5.png"
           style="width:50%; transform: translate(0%, 170%); z-index: 2;" />
       </div>
-      <div class="sub-bottom-up">
+      <div class="sub-bottom-up" style="transform: translatey(50%);"> 
         <img src="/Artwork/Prevent/Text_แต่หากคุณเพิกเฉยต่อสิ่งเหล่านี้.png" width="60%" />
       </div>
-      <div class="sub-bottom-down">
+      <div class="sub-bottom-down" style="transform: translatey(50%);">
         <a class="bottom-button" href="index.html">
           CLICK
         </a>
@@ -198,7 +203,8 @@
       scrollBG("prevention", 22);
       scrollBG2("elecpost", -70);
       showByClasswTr("vertical-subprevent");
-      showByClasswTr("head-prevent")
+      showByClasswTr("head-prevent");
+      scrollWater("water-scr", 10);
     });
 
     function showByClasswTr(eclass) {
@@ -219,9 +225,16 @@
         }
       }
     }
-   
-     // Scroll Head Prevent
-     function scrollBG(eid, scale, start) {
+
+    // Scroll Water
+    function scrollWater(eclass, scale, start) {
+      var start = 20;
+      var add = preventContent.getBoundingClientRect().top / scale;
+      document.getElementsByClassName(eclass).style.transform = "translatey(start + add + %);";
+    }
+
+    // Scroll Head Prevent
+    function scrollBG(eid, scale, start) {
       var start = 0;
       var add = head1.getBoundingClientRect().top / scale;
       document.getElementById(eid).style.bottom = start + add + "%";

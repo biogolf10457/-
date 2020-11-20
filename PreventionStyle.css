@@ -26,16 +26,16 @@
   overflow: hidden;
 }
 
-.water-scroll{
+.water-scr{
   position: absolute;
   width: 100%;
-  overflow: hidden;
-  z-index: 3;
+  overflow-x: hidden;
+  z-index: 4;
 }
 
 .water{
+  position: fixed;
   width: 100%;
-  transform: translatey(15%);
 }
 
 .subscene{
@@ -147,7 +147,6 @@
 
 #bottom{
   padding-top: 5vw;
-  overflow-x: hidden;
 }
 
 .pic-bottom{
@@ -162,7 +161,6 @@
   height: auto;
   color: #ededed;
   text-align: center;
-  padding-top: 15vw;
   z-index: 3;
 }
 
@@ -236,13 +234,13 @@
 
 @keyframes bg1Animation{
   0%{
-    transform: translate(-90%, 35%);
-  }
-  50%{
     transform: translate(-90%, 37%);
   }
-  100%{
+  50%{
     transform: translate(-90%, 35%);
+  }
+  100%{
+    transform: translate(-90%, 37%);
   }
 }
 
@@ -293,12 +291,12 @@
 
 @keyframes bg4Animation{
   0%{
-    transform: translate(30%, 75%);
+    transform: translate(30%, 72%);
   }
   50%{
-    transform: translate(30%, 78%);
+    transform: translate(30%, 75%);
   }
   100%{
-    transform: translate(30%, 75%);
+    transform: translate(30%, 72%);
   }
 }
