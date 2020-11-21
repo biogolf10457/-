@@ -60,7 +60,7 @@ ul.horizontal {
   list-style-type: none;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 5% 0 0;
   z-index: 5;
 }
 ul.horizontal li {
