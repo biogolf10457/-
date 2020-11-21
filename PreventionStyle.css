@@ -29,7 +29,7 @@
 .water-scr{
   position: absolute;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 4;
 }
 
@@ -298,5 +298,24 @@
   }
   100%{
     transform: translate(30%, 72%);
+  }
+}
+
+#water{
+  animation-name: waterAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes waterAnimation{
+  0%{
+    transform: translatey(0%);
+  }
+  50%{
+    transform: translatey(2%);
+  }
+  100%{
+    transform: translatey(0%);
   }
 }

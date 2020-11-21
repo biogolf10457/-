@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="preventContent">
+  <div class="preventContent" id="preventContent">
     <nav>
       <ul class="horizontal">
         <li style="float: left; margin-top: 1%">
@@ -28,8 +28,8 @@
 
 
 
-    <div class="water-scr" id="water-scr">
-      <img class="water" src="/Artwork/Prevent/คลื่นน้ำที่ตามลงมาเวลา scroll.png" style="transform: translatey(20%);" />
+    <div class="water-scr" id="water-scr" style="top: 6%;">
+      <img class="water" id="water" src="/Artwork/Prevent/คลื่นน้ำที่ตามลงมาเวลา scroll.png" style="transform: translatey(0%);"/>
     </div>
 
 
@@ -183,7 +183,7 @@
 
 
 
-  <footer>
+  <footer style="padding-top: 5%;">
     <div class="footHalf">
       <img src="/Artwork/Logo_.png" alt="" width="16%" />
       <div id="footTitle">KRUNGTAINAM (กรุงใต้น้ำ)</div>
@@ -197,14 +197,16 @@
     </div>
   </footer>
   <script>
+    
     var w = window.innerWidth;
     var h = window.innerHeight;
+    
     window.addEventListener("scroll", (event) => {
       scrollBG("prevention", 22);
       scrollBG2("elecpost", -70);
       showByClasswTr("vertical-subprevent");
       showByClasswTr("head-prevent");
-      scrollWater("water-scr", 10);
+      scrollWater("water-scr", 1100);
     });
 
     function showByClasswTr(eclass) {
@@ -228,9 +230,10 @@
 
     // Scroll Water
     function scrollWater(eid, scale, start) {
-      var start = 20;
+      var start = 6;
       var add = preventContent.getBoundingClientRect().top / scale;
-      document.getElementById(eid).style.transform = "translatey("+ start + add + "%);";
+      console.log(add);
+      document.getElementById(eid).style.top = + start - add + "%";
     }
 
     // Scroll Head Prevent
