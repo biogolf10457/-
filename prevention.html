@@ -170,7 +170,7 @@
         <img class="headImg" id="taxi" src="/Artwork/Prevent/Prevent_Artwork-5.png"
           style="width:50%; transform: translate(0%, 170%); z-index: 2;" />
       </div>
-      <div class="sub-bottom-up" style="transform: translatey(50%);"> 
+      <div class="sub-bottom-up" > 
         <img src="/Artwork/Prevent/Text_แต่หากคุณเพิกเฉยต่อสิ่งเหล่านี้.png" width="60%" />
       </div>
       <div class="sub-bottom-down" style="transform: translatey(50%);">
@@ -183,7 +183,7 @@
 
 
 
-  <footer style="padding-top: 5%;">
+  <footer style="padding-top: 5%; background-color: #6cd7d1;">
     <div class="footHalf">
       <img src="/Artwork/Logo_.png" alt="" width="16%" />
       <div id="footTitle">KRUNGTAINAM (กรุงใต้น้ำ)</div>
@@ -207,6 +207,7 @@
       showByClasswTr("vertical-subprevent");
       showByClasswTr("head-prevent");
       scrollWater("water-scr", 1100);
+      showByClasswTr1("sub-bottom-up");
     });
 
     function showByClasswTr(eclass) {
@@ -224,6 +225,25 @@
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
           elms[i].style.transform = "translate(0,5%)";
+        }
+      }
+    }
+
+    function showByClasswTr1(eclass) {
+      var elms = document.getElementsByClassName(eclass);
+      for (let i = 0; i < elms.length; i++) {
+        if (
+          elms[i].getBoundingClientRect().top > h / 3 &&
+          elms[i].getBoundingClientRect().top < (2 * h) / 3
+        ) {
+          elms[i].style.opacity = "100%";
+          elms[i].style.transform = "translate(0,50%)";
+        }
+      }
+      if (elms[0].getBoundingClientRect().top > (2 * h) / 3) {
+        for (let i = 0; i < elms.length; i++) {
+          elms[i].style.opacity = "0%";
+          elms[i].style.transform = "translate(0,55%)";
         }
       }
     }

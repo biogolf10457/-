@@ -162,6 +162,7 @@
   color: #ededed;
   text-align: center;
   z-index: 3;
+  transition: 0.5s;
 }
 
 .sub-bottom-down{
