@@ -200,13 +200,16 @@
 
     var w = window.innerWidth;
     var h = window.innerHeight;
-
+    var scrollScale = 1100;
+    if (h > w) {
+      scrollScale = 50;
+    }
     window.addEventListener("scroll", (event) => {
       scrollBG("prevention", 22);
       scrollBG2("elecpost", -70);
       showByClasswTr("vertical-subprevent");
       showByClasswTr("head-prevent");
-      scrollWater("water-scr", 1100);
+      scrollWater("water-scr", scrollScale);
       showByClasswTr1("sub-bottom-up");
     });
 
