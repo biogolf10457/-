@@ -217,13 +217,13 @@
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
-          elms[i].getBoundingClientRect().top > h / 3 &&
-          elms[i].getBoundingClientRect().top < (2 * h) / 3
+          elms[i].getBoundingClientRect().top > h / 5 &&
+          elms[i].getBoundingClientRect().top < (4 * h) / 5
         ) {
           elms[i].style.opacity = "100%";
         }
       }
-      if (elms[0].getBoundingClientRect().top > (2 * h) / 3) {
+      if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
         }
@@ -234,14 +234,14 @@
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
-          elms[i].getBoundingClientRect().top > h / 3 &&
-          elms[i].getBoundingClientRect().top < (2 * h) / 3
+          elms[i].getBoundingClientRect().top > h / 5 &&
+          elms[i].getBoundingClientRect().top < (4 * h) / 5
         ) {
           elms[i].style.opacity = "100%";
           elms[i].style.transform = "translate(0,0)";
         }
       }
-      if (elms[0].getBoundingClientRect().top > (2 * h) / 3) {
+      if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
           elms[i].style.transform = "translate(0,5%)";
@@ -253,14 +253,14 @@
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
-          elms[i].getBoundingClientRect().top > h / 3 &&
-          elms[i].getBoundingClientRect().top < (2 * h) / 2.5
+          elms[i].getBoundingClientRect().top > h / 5 &&
+          elms[i].getBoundingClientRect().top < (4 * h) / 5
         ) {
           elms[i].style.opacity = "100%";
           elms[i].style.transform = "translate(50%,0)";
         }
       }
-      if (elms[0].getBoundingClientRect().top > (2 * h) / 2.5) {
+      if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
           elms[i].style.transform = "translate(50%,5%)";
@@ -272,14 +272,14 @@
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
-          elms[i].getBoundingClientRect().top > h / 3 &&
-          elms[i].getBoundingClientRect().top < (2 * h) / 2.5
+          elms[i].getBoundingClientRect().top > h / 5 &&
+          elms[i].getBoundingClientRect().top < (4 * h) / 5
         ) {
           elms[i].style.opacity = "100%";
           elms[i].style.transform = "translate(0,0)";
         }
       }
-      if (elms[0].getBoundingClientRect().top > (2 * h) / 2.5) {
+      if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
           elms[i].style.transform = "translate(0,5%)";
@@ -290,9 +290,9 @@
     function showById(eid) {
       var elm = document.getElementById(eid);
       var elmBCR = elm.getBoundingClientRect();
-      if (elmBCR.top > h / 3 && elmBCR.top < (2 * h) / 3) {
+      if (elmBCR.top > h / 5 && elmBCR.top < (4 * h) / 5) {
         elm.style.opacity = "100%";
-      } else if (elmBCR.top > (2 * h) / 3) {
+      } else if (elmBCR.top > (4 * h) / 5) {
         elm.style.opacity = "0%";
       }
     }
@@ -300,10 +300,10 @@
     function showByIdwTr1(eid) {
       var elm = document.getElementById(eid);
       var elmBCR = elm.getBoundingClientRect();
-      if (elmBCR.top > h / 3 && elmBCR.top < (2 * h) / 3) {
+      if (elmBCR.top > h / 5 && elmBCR.top < (4 * h) / 5) {
         elm.style.opacity = "100%";
         elm.style.transform = "translate(-100%,-165%)";
-      } else if (elmBCR.top > (2 * h) / 3) {
+      } else if (elmBCR.top > (4 * h) / 5) {
         elm.style.opacity = "0%";
         elm.style.transform = "translate(-100%,-160%)";
       }
@@ -312,10 +312,10 @@
     function showByIdwTr2(eid) {
       var elm = document.getElementById(eid);
       var elmBCR = elm.getBoundingClientRect();
-      if (elmBCR.top > h / 3 && elmBCR.top < (2 * h) / 3) {
+      if (elmBCR.top > h / 5 && elmBCR.top < (4 * h) / 5) {
         elm.style.opacity = "100%";
         elm.style.transform = "translate(-150%, 20%)";
-      } else if (elmBCR.top > (2 * h) / 3) {
+      } else if (elmBCR.top > (4 * h) / 5) {
         elm.style.opacity = "0%";
         elm.style.transform = "translate(-150%, 30%)";
       }

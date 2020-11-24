@@ -216,7 +216,7 @@
     });
     var w = window.innerWidth;
     var h = window.innerHeight;
-    var scrollScale = 1100;
+    var scrollScale = 900;
     if (h > w) {
       scrollScale = 50;
     }
@@ -233,14 +233,14 @@
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
-          elms[i].getBoundingClientRect().top > h / 3 &&
-          elms[i].getBoundingClientRect().top < (2 * h) / 4
+          elms[i].getBoundingClientRect().top > h / 5 &&
+          elms[i].getBoundingClientRect().top < (4 * h) / 5
         ) {
           elms[i].style.opacity = "100%";
           elms[i].style.transform = "translate(0,0)";
         }
       }
-      if (elms[0].getBoundingClientRect().top > (2 * h) / 4) {
+      if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
           elms[i].style.transform = "translate(0,5%)";
@@ -252,14 +252,14 @@
       var elms = document.getElementsByClassName(eclass);
       for (let i = 0; i < elms.length; i++) {
         if (
-          elms[i].getBoundingClientRect().top > h / 3 &&
-          elms[i].getBoundingClientRect().top < (2 * h) / 3
+          elms[i].getBoundingClientRect().top > h / 5 &&
+          elms[i].getBoundingClientRect().top < (4 * h) / 5
         ) {
           elms[i].style.opacity = "100%";
           elms[i].style.transform = "translate(0,50%)";
         }
       }
-      if (elms[0].getBoundingClientRect().top > (2 * h) / 3) {
+      if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
         for (let i = 0; i < elms.length; i++) {
           elms[i].style.opacity = "0%";
           elms[i].style.transform = "translate(0,55%)";

@@ -137,59 +137,59 @@
           }
         }
         function showByClass(eclass) {
-          var elms = document.getElementsByClassName(eclass);
+        var elms = document.getElementsByClassName(eclass);
+        for (let i = 0; i < elms.length; i++) {
+          if (
+            elms[i].getBoundingClientRect().top > h / 5 &&
+            elms[i].getBoundingClientRect().top < (4 * h) / 5
+          ) {
+            elms[i].style.opacity = "100%";
+          }
+        }
+        if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
           for (let i = 0; i < elms.length; i++) {
-            if (
-              elms[i].getBoundingClientRect().top > h / 3 &&
-              elms[i].getBoundingClientRect().top < (2 * h) / 3
-            ) {
-              elms[i].style.opacity = "100%";
-            }
-          }
-          if (elms[0].getBoundingClientRect().top > (2 * h) / 3) {
-            for (let i = 0; i < elms.length; i++) {
-              elms[i].style.opacity = "0%";
-            }
+            elms[i].style.opacity = "0%";
           }
         }
-        function showByClasswTr(eclass) {
-          var elms = document.getElementsByClassName(eclass);
+      }
+      function showByClasswTr(eclass) {
+        var elms = document.getElementsByClassName(eclass);
+        for (let i = 0; i < elms.length; i++) {
+          if (
+            elms[i].getBoundingClientRect().top > h / 5 &&
+            elms[i].getBoundingClientRect().top < (4 * h) / 5
+          ) {
+            elms[i].style.opacity = "100%";
+            elms[i].style.transform = "translate(0,0)";
+          }
+        }
+        if (elms[0].getBoundingClientRect().top > (4 * h) / 5) {
           for (let i = 0; i < elms.length; i++) {
-            if (
-              elms[i].getBoundingClientRect().top > h / 3 &&
-              elms[i].getBoundingClientRect().top < (2 * h) / 3
-            ) {
-              elms[i].style.opacity = "100%";
-              elms[i].style.transform = "translate(0,0)";
-            }
-          }
-          if (elms[0].getBoundingClientRect().top > (2 * h) / 3) {
-            for (let i = 0; i < elms.length; i++) {
-              elms[i].style.opacity = "0%";
-              elms[i].style.transform = "translate(0,5%)";
-            }
+            elms[i].style.opacity = "0%";
+            elms[i].style.transform = "translate(0,5%)";
           }
         }
-        function showById(eid) {
-          var elm = document.getElementById(eid);
-          var elmBCR = elm.getBoundingClientRect();
-          if (elmBCR.top > h / 3 && elmBCR.top < (2 * h) / 3) {
-            elm.style.opacity = "100%";
-          } else if (elmBCR.top > (2 * h) / 3) {
-            elm.style.opacity = "0%";
-          }
+      }
+      function showById(eid) {
+        var elm = document.getElementById(eid);
+        var elmBCR = elm.getBoundingClientRect();
+        if (elmBCR.top > h / 5 && elmBCR.top < (4 * h) / 5) {
+          elm.style.opacity = "100%";
+        } else if (elmBCR.top > (4 * h) / 5) {
+          elm.style.opacity = "0%";
         }
-        function showByIdwTr(eid) {
-          var elm = document.getElementById(eid);
-          var elmBCR = elm.getBoundingClientRect();
-          if (elmBCR.top > h / 3 && elmBCR.top < (2 * h) / 3) {
-            elm.style.opacity = "100%";
-            elm.style.transform = "translate(0,0)";
-          } else if (elmBCR.top > (2 * h) / 3) {
-            elm.style.opacity = "0%";
-            elm.style.transform = "translate(0,5%)";
-          }
+      }
+      function showByIdwTr(eid) {
+        var elm = document.getElementById(eid);
+        var elmBCR = elm.getBoundingClientRect();
+        if (elmBCR.top > h / 5 && elmBCR.top < (4 * h) / 5) {
+          elm.style.opacity = "100%";
+          elm.style.transform = "translate(0,0)";
+        } else if (elmBCR.top > (4 * h) / 5) {
+          elm.style.opacity = "0%";
+          elm.style.transform = "translate(0,5%)";
         }
+      }
         function preLoadImg(src) {
           for (let i = 0; i < src.length; i++) {
             var my_image = new Image();
