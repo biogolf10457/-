@@ -417,6 +417,7 @@ li a:hover {
   100% { transform: rotate(360deg); }
 }
 #loaderText{
+  font-family: Athiti;
   margin-top: 2vw;
   color: #ededed;
   font-size: 2vw;
