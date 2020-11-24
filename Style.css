@@ -422,5 +422,5 @@ li a:hover {
   color: #ededed;
   font-size: 2vw;
   text-align: center;
-  word-wrap: keep-all;
+  word-break: keep-all;
 }
