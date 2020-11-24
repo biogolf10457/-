@@ -177,7 +177,22 @@
     </footer>
   </div>
 
+  <div id="loading">
+    <div id=loadElement>
+      <div id="loader"></div>
+      <div id="loaderText">Loading ... </div>
+    </div>
+  </div>
+
   <script>
+    window.addEventListener("load", function () {
+        var loading = document.getElementById("loading");
+        loading.style.opacity = 0;
+        setTimeout(destroyLoading, 1000);
+        function destroyLoading(params) {
+          document.body.removeChild(loading);
+        }
+    });
     var w = window.innerWidth;
     var h = window.innerHeight;
     var slideIndex = 1;
