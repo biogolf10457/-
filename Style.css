@@ -22,6 +22,10 @@ body {
   font-family: AthitiM;
   src: url(Font/Athiti/Athiti-Medium.ttf);
 }
+@font-face {
+  font-family: ArchitectsDaughter;
+  src: url(Font/ArchitectsDaughter-Regular.ttf);
+}
 
 nav {
   background-color: brown;
@@ -423,4 +427,15 @@ li a:hover {
   font-size: 2vw;
   text-align: center;
   word-break: keep-all;
+}
+
+
+
+
+
+
+
+.EN-topic{
+  font-family: ArchitectsDaughter;
+  font-size: 2vw;
 }
