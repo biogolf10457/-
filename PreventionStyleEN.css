@@ -1,0 +1,325 @@
+@font-face {
+  font-family: Deepsea;
+  src: url(Font/UID\ Deep\ sea.ttf);
+}
+@font-face {
+  font-family: CSPraKas;
+  src: url(Font/CS_PraKas/CSPraKas.otf);
+}
+@font-face {
+  font-family: Athiti;
+  src: url(Font/Athiti/Athiti-SemiBold.ttf);
+}
+@font-face {
+  font-family: AthitiM;
+  src: url(Font/Athiti/Athiti-Medium.ttf);
+}
+
+.preventContent{
+  position: relative;
+  background-image: url(/Artwork/Prevent/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.water-scr{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.water{
+  position: fixed;
+  width: 100%;
+}
+
+.subscene{
+  margin: 0;
+  padding: 0;
+  height: 50vw;
+  position: relative;
+}
+
+.headImg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#head1{
+  position: relative;
+  width: 100%;
+  background-image: none;
+}
+
+.head{
+  position: absolute;
+  font-family: Athiti;
+  color: #ededed;
+  font-size: 9vw;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 0%);
+}
+
+#prevent{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 10vw;
+}
+
+.head-prevent{
+  position: relative;
+  transition: 0.5s;
+}
+
+.big-head-prevent{
+  height: 6vw;
+  color: red;
+  font-size: 6vw;
+}
+
+.vertical-subprevent{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30vw;
+  transition: 0.5s;
+}
+
+.left-horizon-subprevent{
+  position: relative;
+  display: inline-block;
+  width: 49vw;
+  height: 50%;
+  padding-left: 5vw;
+  vertical-align: top;
+}
+
+.right-horizon-subprevent{
+  position: relative;
+  display: inline-block;
+  width: 49vw;
+  height: 100%;
+  padding-right: 5vw;
+  vertical-align: top;
+}
+
+.sub-horizon-subprevent{
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+.pic-prevent{
+  position: relative;
+  width: 20vw;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 3vw;
+}
+
+.head-text{
+  text-align: center;
+  margin-bottom: 1.5vw;
+}
+
+.imgEle{
+  position: absolute;
+  transform: translate(-50%, -30%);
+}
+
+#text{
+  position: relative;
+  width: 100%;
+  font-family: CSPraKas;
+  font-size: 1.25vw;
+  text-align: center;
+  color: #ededed;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#bottom{
+  padding-top: 5vw;
+}
+
+.pic-bottom{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.sub-bottom-up{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  color: #ededed;
+  text-align: center;
+  z-index: 3;
+  transition: 0.5s;
+  margin-top: 5vw;
+}
+
+.sub-bottom-down{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 25vw;
+  text-align: center;
+  z-index: 3;
+}
+
+.bottom-button{
+  color: #ededed;
+  font-family: Athiti;
+  font-size: 2vw;
+  text-decoration: none;
+  background-color:  #F04342;
+  padding:0% 2%;
+  border-radius: 20px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.bottom-button:hover{
+  text-decoration: none;
+  color: #F04342;
+  background-color:#ededed;
+  transition: 1s;
+}
+
+#bus{
+  animation-name: busAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes busAnimation{
+  0%{
+    left: 150%;
+  }
+  
+  100%{
+    left: 10%;
+  }
+}
+
+#taxi{
+  animation-name: taxiAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes taxiAnimation{
+  0%{
+    left: -45%;
+  }
+  
+  100%{
+    left: 90%;
+  }
+}
+
+#bg1{
+  animation-name: bg1Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg1Animation{
+  0%{
+    transform: translate(-90%, 37%);
+  }
+  50%{
+    transform: translate(-90%, 35%);
+  }
+  100%{
+    transform: translate(-90%, 37%);
+  }
+}
+
+#bg2{
+  animation-name: bg2Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg2Animation{
+  0%{
+    transform: translate(-55%, 110%);
+  }
+  50%{
+    transform: translate(-55%, 113%);
+  }
+  100%{
+    transform: translate(-55%, 110%);
+  }
+}
+
+#bg3{
+  animation-name: bg3Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg3Animation{
+  0%{
+    transform: translate(10%, 160%)
+  }
+  50%{
+    transform: translate(10%, 156%)
+  }
+  100%{
+    transform: translate(10%, 160%)
+  }
+}
+
+#bg4{
+  animation-name: bg4Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bg4Animation{
+  0%{
+    transform: translate(30%, 72%);
+  }
+  50%{
+    transform: translate(30%, 75%);
+  }
+  100%{
+    transform: translate(30%, 72%);
+  }
+}
+
+#water{
+  animation-name: waterAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes waterAnimation{
+  0%{
+    transform: translatey(0%);
+  }
+  50%{
+    transform: translatey(2%);
+  }
+  100%{
+    transform: translatey(0%);
+  }
+}
