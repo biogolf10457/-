@@ -439,3 +439,22 @@ li a:hover {
   font-family: ArchitectsDaughter;
   font-size: 2vw;
 }
+
+.lang-toggle{
+  font-size: 1vw;
+  position: absolute;
+  top: .4vw;
+  right: .8vw;
+  z-index: 2;
+  text-decoration: none;
+  color: #ededed;
+  font-family: 'Athiti';
+}
+.lang-toggle a{
+  text-decoration: none;
+  color: #ededed;
+}
+.lang-toggle a:hover{
+  text-decoration: none;
+  color: #f04342;
+}
